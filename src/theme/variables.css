@@ -1,6 +1,11 @@
 /* Ionic Variables and Theming. For more info, please see:
 http://ionicframework.com/docs/theming/ */
 
+/* Custom variables */
+:root {
+  --base-text-color-gray-10: #6d6e9c;
+}
+
 /** Ionic CSS Variables **/
 :root {
   /** primary **/

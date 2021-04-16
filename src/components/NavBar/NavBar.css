@@ -5,4 +5,5 @@
 
 .title {
   font-family: RobotoRegular;
+  color: var(--base-text-color-gray-10);
 }
