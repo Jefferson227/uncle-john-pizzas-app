@@ -1,4 +1,5 @@
 import React from 'react';
+import './NavBar.css';
 import SideMenu from '../SideMenu/SideMenu';
 import { IonHeader, IonToolbar, IonTitle, IonPage, IonMenuButton, IonButtons } from '@ionic/react';
 
@@ -15,7 +16,7 @@ const NavBar: React.FC = () => {
             <IonButtons slot="start">
               <IonMenuButton></IonMenuButton>
             </IonButtons>
-            <IonTitle>Title</IonTitle>
+            <IonTitle><span className="title">Title</span></IonTitle>
           </IonToolbar>
         </IonHeader>
       </IonPage>
