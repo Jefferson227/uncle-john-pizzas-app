@@ -1,6 +1,7 @@
 import { Redirect, Route } from 'react-router-dom';
 import { IonApp, IonRouterOutlet } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
+import { setupConfig } from '@ionic/react';
 import Home from './pages/Home';
 import NavBar from './components/NavBar/NavBar';
 
@@ -22,6 +23,10 @@ import '@ionic/react/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
+
+setupConfig({
+  mode: 'md'
+});
 
 const App: React.FC = () => (
   <IonApp>
