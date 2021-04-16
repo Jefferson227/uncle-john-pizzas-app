@@ -3,7 +3,41 @@
   src: url(../../fonts/Roboto-Regular.ttf);
 }
 
-.title {
-  font-family: RobotoRegular;
+@font-face {
+  font-family: RobotoThin;
+  src: url(../../fonts/Roboto-Thin.ttf);
+}
+
+@font-face {
+  font-family: RobotoBold;
+  src: url(../../fonts/Roboto-Bold.ttf);
+}
+
+.ion-menu-button {
+  font-size: 14px;
   color: var(--base-text-color-gray-10);
+}
+
+.navbar-center {
+  width: 85%;
+  display: inline-block;
+}
+
+.navbar-center .title {
+  font-family: RobotoThin;
+  font-size: 14px;
+  color: var(--base-text-color-gray-10);
+}
+
+.navbar-center .subtitle {
+  font-family: RobotoBold;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: var(--base-text-color-gray-10);
+}
+
+.navbar-end {
+  width: 15%;
+  padding-left: 2%;
+  display: inline-block;
 }

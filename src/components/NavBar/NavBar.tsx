@@ -1,7 +1,9 @@
 import React from 'react';
 import './NavBar.css';
+import MenuIcon from '../../assets/img/menu-icon.svg';
+import BasketIcon from '../../assets/img/basket-icon.svg';
 import SideMenu from '../SideMenu/SideMenu';
-import { IonHeader, IonToolbar, IonTitle, IonPage, IonMenuButton, IonButtons } from '@ionic/react';
+import { IonHeader, IonToolbar, IonPage, IonMenuButton, IonButtons, IonIcon } from '@ionic/react';
 
 const contentId = "main-content";
 
@@ -14,9 +16,19 @@ const NavBar: React.FC = () => {
         <IonHeader>
           <IonToolbar>
             <IonButtons slot="start">
-              <IonMenuButton></IonMenuButton>
+              <IonMenuButton className="ion-menu-button">
+                <IonIcon src={MenuIcon}></IonIcon>
+              </IonMenuButton>
             </IonButtons>
-            <IonTitle><span className="title">Title</span></IonTitle>
+
+            <section className="navbar-center">
+              <div className="title">Deliver to:</div>
+              <div className="subtitle">Home</div>
+            </section>
+
+            <section className="navbar-end">
+              <IonIcon src={BasketIcon} className="basket-icon"></IonIcon>
+            </section>
           </IonToolbar>
         </IonHeader>
       </IonPage>
