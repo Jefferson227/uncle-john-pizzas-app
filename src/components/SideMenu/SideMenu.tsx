@@ -1,6 +1,7 @@
 import React from 'react';
 import './SideMenu.css';
-import { IonMenu, IonHeader, IonToolbar, IonTitle, IonContent, IonList, IonItem, IonPage, IonMenuButton, IonButtons } from '@ionic/react';
+import sideMenuPhoto from '../../assets/img/sidemenu-header-photo.png';
+import { IonMenu, IonHeader, IonToolbar, IonContent, IonList, IonItem } from '@ionic/react';
 
 interface SideMenuProps {
   contentId: string;
@@ -11,7 +12,11 @@ const SideMenu: React.FC<SideMenuProps> = ({contentId}) => {
     <IonMenu side="start" menuId="first" contentId={contentId}>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>Start Menu</IonTitle>
+          <div className="sidemenu-header">
+            <div className="sidemenu-photo"><img className="sidemenu-profile-pic" src={sideMenuPhoto} /></div>
+            <div className="sidemenu-name">Jaykey Del Mar</div>
+            <div className="sidemenu-email">janedone@gmail.com</div>
+          </div>
         </IonToolbar>
       </IonHeader>
       <IonContent>

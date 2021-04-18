@@ -4,6 +4,7 @@ http://ionicframework.com/docs/theming/ */
 /* Custom variables */
 :root {
   --base-text-color-gray-10: #6d6e9c;
+  --base-text-color-gray-05: #a0a8cc;
 }
 
 /** Ionic CSS Variables **/

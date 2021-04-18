@@ -1,3 +1,30 @@
 ion-menu::part(container) {
   border-radius: 0 20px 20px 0;
 }
+
+.sidemenu-header {
+  padding: 41px 41px;
+}
+
+.sidemenu-name {
+  font-family: RobotoBold;
+  font-size: 20px;
+  color: var(--base-text-color-gray-10);
+}
+
+.sidemenu-email {
+  font-family: RobotoRegular;
+  font-size: 14px;
+  color: var(--base-text-color-gray-05);
+}
+
+.sidemenu-photo {
+  height: 85px;
+  position: relative;
+}
+
+.sidemenu-photo .sidemenu-profile-pic {
+  top: 0;
+  left: -13px;
+  position: absolute;
+}
