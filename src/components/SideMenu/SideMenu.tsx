@@ -1,4 +1,5 @@
 import React from 'react';
+import './SideMenu.css';
 import { IonMenu, IonHeader, IonToolbar, IonTitle, IonContent, IonList, IonItem, IonPage, IonMenuButton, IonButtons } from '@ionic/react';
 
 interface SideMenuProps {
