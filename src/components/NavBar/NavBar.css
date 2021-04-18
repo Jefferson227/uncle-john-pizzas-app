@@ -1,18 +1,3 @@
-@font-face {
-  font-family: RobotoRegular;
-  src: url(../../fonts/Roboto-Regular.ttf);
-}
-
-@font-face {
-  font-family: RobotoThin;
-  src: url(../../fonts/Roboto-Thin.ttf);
-}
-
-@font-face {
-  font-family: RobotoBold;
-  src: url(../../fonts/Roboto-Bold.ttf);
-}
-
 .ion-menu-button {
   font-size: 14px;
   color: var(--base-text-color-gray-10);
