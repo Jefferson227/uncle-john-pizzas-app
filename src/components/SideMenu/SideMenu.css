@@ -29,3 +29,20 @@ ion-menu::part(container) {
   left: -13px;
   position: absolute;
 }
+
+.sidemenu-list,
+.sidemenu-list .sidemenu-list-item::part(native),
+.sidemenu-content::part(background) {
+  background-color: #f4f3f9;
+}
+
+.sidemenu-list {
+  padding: 62px 25px;
+}
+
+.sidemenu-item-text {
+  font-family: RobotoRegular;
+  font-size: 14px;
+  color: var(--base-text-color-gray-10);
+  margin-left: 35px;
+}
