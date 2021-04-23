@@ -61,3 +61,12 @@ ion-menu::part(container) {
 .sidemenu-content-2 .sidemenu-list {
   border-top: 1px solid var(--base-text-color-gray-13);
 }
+
+.sidemenu-ion-header.header-md {
+  border-bottom: 1px solid var(--base-text-color-gray-13);
+  box-shadow: 0px 4px 15px rgba(218, 218, 229, 0.2);
+}
+
+.sidemenu-ion-header.header-md::after {
+  background: none;
+}

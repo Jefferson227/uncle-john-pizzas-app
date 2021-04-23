@@ -17,7 +17,7 @@ interface SideMenuProps {
 const SideMenu: React.FC<SideMenuProps> = ({contentId}) => {
   return (
     <IonMenu side="start" menuId="first" contentId={contentId}>
-      <IonHeader>
+      <IonHeader className="sidemenu-ion-header">
         <IonToolbar>
           <div className="sidemenu-header">
             <div className="sidemenu-photo"><img className="sidemenu-profile-pic" src={SideMenuPhoto} /></div>
