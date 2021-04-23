@@ -3,8 +3,10 @@ http://ionicframework.com/docs/theming/ */
 
 /* Custom variables */
 :root {
-  --base-text-color-gray-10: #6d6e9c;
   --base-text-color-gray-05: #a0a8cc;
+  --base-text-color-gray-10: #6d6e9c;
+  --base-text-color-gray-13: #dadae5;
+  --base-text-color-gray-15: #f4f3f9;
 }
 
 /** Ionic CSS Variables **/

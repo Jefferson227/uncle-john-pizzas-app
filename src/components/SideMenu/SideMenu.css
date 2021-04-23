@@ -33,7 +33,7 @@ ion-menu::part(container) {
 .sidemenu-list,
 .sidemenu-list .sidemenu-list-item::part(native),
 .sidemenu-content::part(background) {
-  background-color: #f4f3f9;
+  background-color: var(--base-text-color-gray-15);
 }
 
 .sidemenu-list {
@@ -45,4 +45,19 @@ ion-menu::part(container) {
   font-size: 14px;
   color: var(--base-text-color-gray-10);
   margin-left: 35px;
+}
+
+.sidemenu-content-1 {
+  min-height: 365px;
+  /* border-bottom: 1px solid var(--base-text-color-gray-10); */
+}
+
+.sidemenu-content-2 .sidemenu-list,
+.sidemenu-content-2 .sidemenu-list .sidemenu-list-item::part(native),
+.sidemenu-content-2::part(background) {
+  background-color: #fff;
+}
+
+.sidemenu-content-2 .sidemenu-list {
+  border-top: 1px solid var(--base-text-color-gray-13);
 }

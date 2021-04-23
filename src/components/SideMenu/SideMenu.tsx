@@ -7,6 +7,8 @@ import PaymentMethodIcon from '../../assets/img/payment-method-icon.svg';
 import OrderHistoryIcon from '../../assets/img/order-history-icon.svg';
 import AddressesIcon from '../../assets/img/addresses-icon.svg';
 import HelpCenterIcon from '../../assets/img/help-center-icon.svg';
+import SettingsIcon from '../../assets/img/settings-icon.svg';
+import LogOutIcon from '../LogOutIcon/LogOutIcon';
 
 interface SideMenuProps {
   contentId: string;
@@ -24,7 +26,8 @@ const SideMenu: React.FC<SideMenuProps> = ({contentId}) => {
           </div>
         </IonToolbar>
       </IonHeader>
-      <IonContent className="sidemenu-content">
+
+      <IonContent className="sidemenu-content sidemenu-content-1">
         <IonList className="sidemenu-list">
           <IonItem className="sidemenu-list-item" lines="none">
             <IonIcon src={ProfileIcon}></IonIcon>
@@ -49,6 +52,22 @@ const SideMenu: React.FC<SideMenuProps> = ({contentId}) => {
           <IonItem className="sidemenu-list-item" lines="none">
             <IonIcon src={HelpCenterIcon}></IonIcon>
             <span className="sidemenu-item-text">Help Center</span>
+          </IonItem>
+        </IonList>
+      </IonContent>
+
+      <IonContent className="sidemenu-content sidemenu-content-2">
+        <IonList className="sidemenu-list">
+          <IonItem className="sidemenu-list-item" lines="none">
+            <IonIcon src={SettingsIcon}></IonIcon>
+            <span className="sidemenu-item-text">Settings</span>
+          </IonItem>
+
+          <IonItem className="sidemenu-list-item" lines="none">
+            {/* <IonIcon src={LogOutIcon1}></IonIcon>
+            <IonIcon src={LogOutIcon2}></IonIcon> */}
+            <LogOutIcon />
+            <span className="sidemenu-item-text">Log out</span>
           </IonItem>
         </IonList>
       </IonContent>
