@@ -29,3 +29,7 @@
   background-color: var(--base-text-color-gray-15);
   border-radius: 0 0 20px 20px;
 }
+
+.dropdown-menu-icon {
+  font-size: 15px;
+}

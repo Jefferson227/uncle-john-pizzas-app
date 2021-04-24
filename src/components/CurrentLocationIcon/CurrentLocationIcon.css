@@ -1,0 +1,22 @@
+.current-location-icon-container {
+  font-size: 15px;
+  position: relative;
+  height: 15px;
+  width: 15px;
+}
+
+.current-location-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.current-location-icon-center {
+  font-size: 7px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-42%, -42%);
+}
+
+.current-location-icon-outline {
+}
