@@ -3,9 +3,11 @@ import './NavBar.css';
 import MenuIcon from '../../assets/img/menu-icon.svg';
 import BasketIcon from '../../assets/img/basket-icon.svg';
 import SideMenu from '../SideMenu/SideMenu';
+import DropDownMenu from '../DropDownMenu/DropDownMenu';
 import { IonHeader, IonToolbar, IonPage, IonMenuButton, IonButtons, IonIcon } from '@ionic/react';
 
 const contentId = "main-content";
+const dropDownMenuId = "dropdown-menu-addresses";
 
 const NavBar: React.FC = () => {
   return (
@@ -21,10 +23,10 @@ const NavBar: React.FC = () => {
               </IonMenuButton>
             </IonButtons>
 
-            <section className="navbar-center">
+            <label className="navbar-center" htmlFor={dropDownMenuId}>
               <div className="title">Deliver to:</div>
               <div className="subtitle">Home</div>
-            </section>
+            </label>
 
             <section className="navbar-end">
               <IonIcon src={BasketIcon} className="basket-icon"></IonIcon>
@@ -32,6 +34,8 @@ const NavBar: React.FC = () => {
           </IonToolbar>
         </IonHeader>
       </IonPage>
+
+      <DropDownMenu labelId={dropDownMenuId} />
     </div>
   )
 };
