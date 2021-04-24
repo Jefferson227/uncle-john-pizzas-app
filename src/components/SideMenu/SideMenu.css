@@ -48,7 +48,7 @@ ion-menu::part(container) {
 }
 
 .sidemenu-content-1 {
-  min-height: 365px;
+  min-height: 396px;
   /* border-bottom: 1px solid var(--base-text-color-gray-10); */
 }
 
@@ -60,6 +60,7 @@ ion-menu::part(container) {
 
 .sidemenu-content-2 .sidemenu-list {
   border-top: 1px solid var(--base-text-color-gray-13);
+  padding: 45px 25px;
 }
 
 .sidemenu-ion-header.header-md {
