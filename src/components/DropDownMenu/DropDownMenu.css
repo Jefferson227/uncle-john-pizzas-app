@@ -1,15 +1,13 @@
 .dropdown-menu-content {
   visibility: hidden;
   opacity: 0;
-  height: 200px;
+  height: 277px;
   width: 90%;
-  background: blue;
   position: absolute;
   left: 50%;
   top: 60px;
   transform: translateX(-50%);
   transition: all 0.2s;
-  border-radius: 0 0 20px 20px;
 }
 
 .dropdown-menu-checkbox {
@@ -19,4 +17,15 @@
 .dropdown-menu-checkbox:checked ~ .dropdown-menu-content {
   visibility: visible;
   opacity: 1;
+}
+
+.dropdown-menu-list,
+.dropdown-menu-list .dropdown-menu-list-item::part(native),
+.dropdown-menu-content::part(background) {
+  background-color: var(--base-text-color-gray-15);
+}
+
+.dropdown-menu-content::part(background) {
+  background-color: var(--base-text-color-gray-15);
+  border-radius: 0 0 20px 20px;
 }
