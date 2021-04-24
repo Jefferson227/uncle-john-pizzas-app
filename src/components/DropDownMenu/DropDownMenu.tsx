@@ -16,11 +16,48 @@ const DropDownMenu: React.FC<DropDownMenuProps> = ({labelId}) => (
 
     <IonContent className="dropdown-menu-content">
       <IonList className="dropdown-menu-list">
-        <IonItem className="dropdown-menu-list-item" lines="full"><CurrentLocationIcon /> Current Location</IonItem>
-        <IonItem className="dropdown-menu-list-item" lines="full"><IonIcon className="dropdown-menu-icon" src={HomeIcon}></IonIcon> Home</IonItem>
-        <IonItem className="dropdown-menu-list-item" lines="full"><IonIcon className="dropdown-menu-icon" src={LocationIcon}></IonIcon> Other</IonItem>
-        <IonItem className="dropdown-menu-list-item" lines="full"><IonIcon className="dropdown-menu-icon" src={WorkIcon}></IonIcon> Work</IonItem>
-        <IonItem className="dropdown-menu-list-item" lines="full"><AddNewAddressIcon /> Add a new address</IonItem>
+        <IonItem className="dropdown-menu-list-item" lines="full">
+          <CurrentLocationIcon />
+
+          <section className="dropdown-menu-title-group">
+            <div className="dropdown-menu-title">Current Location</div>
+          </section>
+        </IonItem>
+
+        <IonItem className="dropdown-menu-list-item" lines="full">
+          <IonIcon className="dropdown-menu-icon" src={HomeIcon}></IonIcon>
+
+          <section className="dropdown-menu-title-group">
+            <div className="dropdown-menu-title">Home</div>
+            <div className="dropdown-menu-subtitle">3728 Brand Road, Swift Current</div>
+          </section>
+        </IonItem>
+
+        <IonItem className="dropdown-menu-list-item" lines="full">
+          <IonIcon className="dropdown-menu-icon" src={LocationIcon}></IonIcon>
+
+          <section className="dropdown-menu-title-group">
+            <div className="dropdown-menu-title">Other</div>
+            <div className="dropdown-menu-subtitle">81 Springside, Lancaster</div>
+          </section>
+        </IonItem>
+
+        <IonItem className="dropdown-menu-list-item" lines="full">
+          <IonIcon className="dropdown-menu-icon" src={WorkIcon}></IonIcon>
+
+          <section className="dropdown-menu-title-group">
+            <div className="dropdown-menu-title">Work</div>
+            <div className="dropdown-menu-subtitle">4932 Sixth Street, Westminster</div>
+          </section>
+        </IonItem>
+
+        <IonItem className="dropdown-menu-list-item" lines="full">
+          <AddNewAddressIcon />
+
+          <section className="dropdown-menu-title-group">
+            <div className="dropdown-menu-title title-orange">Add a new address</div>
+          </section>
+        </IonItem>
       </IonList>
     </IonContent>
   </section>

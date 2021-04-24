@@ -1,7 +1,7 @@
 .dropdown-menu-content {
   visibility: hidden;
   opacity: 0;
-  height: 277px;
+  height: 37%;
   width: 90%;
   position: absolute;
   left: 50%;
@@ -32,4 +32,21 @@
 
 .dropdown-menu-icon {
   font-size: 15px;
+}
+
+.dropdown-menu-title-group {
+  padding: 10px 20px;
+  font-size: 14px;
+  color: var(--base-text-color-gray-10);
+}
+
+.dropdown-menu-title {
+  font-family: RobotoBold;
+}
+
+.dropdown-menu-title.title-orange {
+  color: var(--base-text-color-orange-10);
+}
+
+.dropdown-menu-subtitle {
 }
