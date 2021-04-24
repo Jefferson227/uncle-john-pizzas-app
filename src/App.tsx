@@ -4,7 +4,6 @@ import { IonReactRouter } from '@ionic/react-router';
 import { setupConfig } from '@ionic/react';
 import Home from './pages/Home';
 import NavBar from './components/NavBar/NavBar';
-import DropDownMenu from './components/DropDownMenu/DropDownMenu';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
