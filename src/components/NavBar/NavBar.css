@@ -3,6 +3,10 @@
   color: var(--base-text-color-gray-10);
 }
 
+.navbar-container ion-toolbar {
+  --background: #fff;
+}
+
 .navbar-center {
   width: 85%;
   display: inline-block;

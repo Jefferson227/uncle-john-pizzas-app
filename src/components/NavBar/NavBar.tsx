@@ -11,7 +11,7 @@ const dropDownMenuId = "dropdown-menu-addresses";
 
 const NavBar: React.FC = () => {
   return (
-    <section>
+    <section className="navbar-container">
       <SideMenu contentId={contentId}/>
 
       <IonPage id={contentId}>

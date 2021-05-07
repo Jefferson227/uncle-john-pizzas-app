@@ -6,9 +6,12 @@ http://ionicframework.com/docs/theming/ */
   --base-text-color-gray-05: #a0a8cc;
   --base-text-color-gray-10: #6d6e9c;
   --base-text-color-gray-13: #dadae5;
+  --base-text-color-gray-14: #e5e5e5;
   --base-text-color-gray-15: #f4f3f9;
   --base-text-color-orange-10: #ffa360;
   --base-text-color-red-10: #f5313f;
+
+  --ion-background-color: var(--base-text-color-gray-14);
 }
 
 /** Ionic CSS Variables **/
