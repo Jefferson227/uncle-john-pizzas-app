@@ -31,8 +31,10 @@
 }
 
 .home-reorder-container {
-  background: rgb(159 176 255);
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(20px);
   width: 332px;
+  height: 218px;
   margin-left: 22px;
   margin-top: -22px;
   border-radius: 20px;
@@ -63,9 +65,29 @@
   text-transform: uppercase;
   color: var(--base-text-color-gray-10);
   letter-spacing: 1px;
+  margin-top: 2px;
 }
 
 .home-reorder-price {
   font-size: 20px;
   color: var(--base-text-color-gray-10);
+  margin-top: 4px;
+}
+
+.home-add-to-cart-button {
+  font-size: 15px;
+  text-align: center;
+  background: linear-gradient(
+    107.9deg,
+    var(--base-text-color-red-10) 1.55%,
+    var(--base-text-color-orange-10) 94.08%
+  );
+  box-shadow: 0px 6px 25px rgb(245 49 63 / 40%);
+  border-radius: 20px;
+  padding: 12px 20px;
+  color: #fff;
+  line-height: 18px;
+  text-transform: capitalize;
+  margin-top: 10px;
+  letter-spacing: -0.3px;
 }
