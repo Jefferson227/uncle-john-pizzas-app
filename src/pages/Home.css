@@ -36,4 +36,36 @@
   margin-left: 22px;
   margin-top: -22px;
   border-radius: 20px;
+  display: flex;
+}
+
+.home-reorder-pizza-image {
+  max-width: 177px;
+  border: 0;
+  max-height: 175px;
+}
+
+.home-reorder-container-left {
+}
+
+.home-reorder-container-right {
+  padding-top: 30px;
+  font-family: "RobotoBold";
+}
+
+.home-reorder-title {
+  font-size: 20px;
+  color: var(--base-text-color-red-10);
+}
+
+.home-reorder-ingredients {
+  font-size: 10px;
+  text-transform: uppercase;
+  color: var(--base-text-color-gray-10);
+  letter-spacing: 1px;
+}
+
+.home-reorder-price {
+  font-size: 20px;
+  color: var(--base-text-color-gray-10);
 }

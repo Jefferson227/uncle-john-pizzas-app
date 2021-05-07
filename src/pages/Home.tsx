@@ -15,15 +15,19 @@ const Home: React.FC = () => {
         </section>
 
         <section className="home-reorder-container">
-          <img src={ThinCrustPizzaPhoto} alt="Thin Crust Pizza"/>
+          <div className="home-reorder-container-left">
+            <img src={ThinCrustPizzaPhoto} className="home-reorder-pizza-image" alt="Thin Crust Pizza"/>
+          </div>
 
-          <div className="home-reorder-title">Order again?</div>
+          <div className="home-reorder-container-right">
+            <div className="home-reorder-title">Order again?</div>
 
-          <div className="home-reorder-ingredients">Small, Thin Crust, Tomatoes, Basil, Cheese</div>
+            <div className="home-reorder-ingredients">Small, Thin Crust, Tomatoes, Basil, Cheese</div>
 
-          <div className="home-reorder-price">$12</div>
+            <div className="home-reorder-price">$12</div>
 
-          <button className="home-add-to-cart-button">Add To Cart</button>
+            <button className="home-add-to-cart-button">Add To Cart</button>
+          </div>
         </section>
       </IonContent>
     </IonPage>
