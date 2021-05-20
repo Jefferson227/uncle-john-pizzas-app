@@ -38,20 +38,21 @@
   margin-left: 22px;
   margin-top: -22px;
   border-radius: 20px;
-  display: flex;
 }
 
 .home-reorder-pizza-image {
-  max-width: 177px;
-  border: 0;
-  max-height: 175px;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .home-reorder-container-left {
+  position: relative;
 }
 
 .home-reorder-container-right {
-  padding-top: 30px;
+  padding-top: 41px;
+  padding-left: 163px;
   font-family: "RobotoBold";
 }
 
