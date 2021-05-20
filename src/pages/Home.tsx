@@ -1,6 +1,7 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
+import { IonContent, IonPage } from '@ionic/react';
 import './Home.css';
 import ThinCrustPizzaPhoto from '../assets/img/thin-crust-pizza-photo.png';
+import ThickCrustPizzaPhoto from '../assets/img/thick-crust-pizza-photo.png';
 
 const Home: React.FC = () => {
   return (
@@ -27,6 +28,18 @@ const Home: React.FC = () => {
             <div className="home-reorder-price">$12</div>
 
             <button className="home-add-to-cart-button">Add To Cart</button>
+          </div>
+        </section>
+
+        <section className="home-create-pizza-container">
+          <div className="home-create-pizza-header">
+            <div className="home-create-pizza-title">Create your <strong>own pizza</strong></div>
+
+            <div className="home-create-pizza-subtitle">The cost will depend on your customization</div>
+          </div>
+
+          <div className="home-create-pizza-image-container">
+            <img src={ThickCrustPizzaPhoto} className="home-create-pizza-image" alt="Thick Crust Pizza"/>
           </div>
         </section>
       </IonContent>
