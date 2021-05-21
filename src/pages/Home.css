@@ -112,6 +112,7 @@
 
 .home-create-pizza-title {
   color: var(--base-text-color-red-10);
+  letter-spacing: -0.3px;
 }
 
 .home-create-pizza-title strong {
