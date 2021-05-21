@@ -101,4 +101,41 @@
   margin-top: 20px;
   height: 386px;
   border-radius: 20px 20px 0 0;
+  font-family: "RobotoLight";
+  font-size: 25px;
+}
+
+.home-create-pizza-header {
+  text-align: center;
+  padding-top: 31px;
+}
+
+.home-create-pizza-title {
+  color: var(--base-text-color-red-10);
+}
+
+.home-create-pizza-title strong {
+  font-family: "RobotoBold";
+}
+
+.home-create-pizza-subtitle {
+  font-family: "RobotoBold";
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--base-text-color-gray-05);
+  margin-top: 6px;
+}
+
+.home-create-pizza-image-container {
+  position: relative;
+  height: 306px;
+}
+
+.home-create-pizza-image {
+  position: absolute;
+  bottom: -89px;
+  left: -36px;
+  max-width: 406px;
+  max-height: 406px;
 }
