@@ -71,3 +71,9 @@ ion-menu::part(container) {
 .sidemenu-ion-header.header-md::after {
   background: none;
 }
+
+.sidemenu-ion-menu::part(backdrop) {
+  opacity: 1 !important;
+  background: transparent;
+  backdrop-filter: blur(7px);
+}
