@@ -5,6 +5,9 @@ import { setupConfig } from '@ionic/react';
 import Home from './pages/Home';
 import NavBar from './components/NavBar/NavBar';
 
+/* Custom CSS */
+import './App.css';
+
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
 
@@ -31,6 +34,10 @@ setupConfig({
 
 const App: React.FC = () => (
   <IonApp>
+    <div className="app-backdrop-container">
+      <div className="app-backdrop-message">Sorry, for the moment this demo is available only for the resolution 375x800.</div>
+    </div>
+
     <IonReactRouter>
       <IonRouterOutlet>
         <Route exact path="/home">

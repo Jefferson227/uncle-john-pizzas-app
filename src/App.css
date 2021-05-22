@@ -1,0 +1,22 @@
+@media all and (min-width: 376px) {
+  .app-backdrop-container {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: #fff;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    position: relative;
+  }
+
+  .app-backdrop-message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "RobotoRegular";
+    font-size: 36px;
+    text-align: center;
+  }
+}
