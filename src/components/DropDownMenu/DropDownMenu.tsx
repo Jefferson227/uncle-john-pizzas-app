@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import { IonContent, IonList, IonItem, IonIcon } from '@ionic/react';
 import './DropDownMenu.css';
 import CurrentLocationIcon from '../CurrentLocationIcon/CurrentLocationIcon';
@@ -10,59 +11,67 @@ interface DropDownMenuProps {
   labelId: string;
 }
 
-const DropDownMenu: React.FC<DropDownMenuProps> = ({labelId}) => (
-  <section>
-    <input type="checkbox" id={labelId} className="dropdown-menu-checkbox" />
+const DropDownMenu: React.FC<DropDownMenuProps> = ({labelId}) => {
+  const [dropDownMenuEnabled, setDropDownEnabled] = useState(false);
+  const test = () => {
+    console.log('backdrop clicked');
+    setDropDownEnabled(false);
+  };
 
-    <div className="dropdown-menu-backdrop"></div>
+  return (
+    <section>
+      <input type="checkbox" id={labelId} className="dropdown-menu-checkbox" defaultChecked={dropDownMenuEnabled} />
 
-    <IonContent className="dropdown-menu-content">
-      <IonList className="dropdown-menu-list">
-        <IonItem className="dropdown-menu-list-item" lines="full">
-          <CurrentLocationIcon />
+      <div className="dropdown-menu-backdrop" onClick={() => test()}></div>
 
-          <section className="dropdown-menu-title-group">
-            <div className="dropdown-menu-title">Current Location</div>
-          </section>
-        </IonItem>
+      <IonContent className="dropdown-menu-content">
+        <IonList className="dropdown-menu-list">
+          <IonItem className="dropdown-menu-list-item" lines="full">
+            <CurrentLocationIcon />
 
-        <IonItem className="dropdown-menu-list-item" lines="full">
-          <IonIcon className="dropdown-menu-icon" src={HomeIcon}></IonIcon>
+            <section className="dropdown-menu-title-group">
+              <div className="dropdown-menu-title">Current Location</div>
+            </section>
+          </IonItem>
 
-          <section className="dropdown-menu-title-group">
-            <div className="dropdown-menu-title">Home</div>
-            <div className="dropdown-menu-subtitle">3728 Brand Road, Swift Current</div>
-          </section>
-        </IonItem>
+          <IonItem className="dropdown-menu-list-item" lines="full">
+            <IonIcon className="dropdown-menu-icon" src={HomeIcon}></IonIcon>
 
-        <IonItem className="dropdown-menu-list-item" lines="full">
-          <IonIcon className="dropdown-menu-icon" src={LocationIcon}></IonIcon>
+            <section className="dropdown-menu-title-group">
+              <div className="dropdown-menu-title">Home</div>
+              <div className="dropdown-menu-subtitle">3728 Brand Road, Swift Current</div>
+            </section>
+          </IonItem>
 
-          <section className="dropdown-menu-title-group">
-            <div className="dropdown-menu-title">Other</div>
-            <div className="dropdown-menu-subtitle">81 Springside, Lancaster</div>
-          </section>
-        </IonItem>
+          <IonItem className="dropdown-menu-list-item" lines="full">
+            <IonIcon className="dropdown-menu-icon" src={LocationIcon}></IonIcon>
 
-        <IonItem className="dropdown-menu-list-item" lines="full">
-          <IonIcon className="dropdown-menu-icon" src={WorkIcon}></IonIcon>
+            <section className="dropdown-menu-title-group">
+              <div className="dropdown-menu-title">Other</div>
+              <div className="dropdown-menu-subtitle">81 Springside, Lancaster</div>
+            </section>
+          </IonItem>
 
-          <section className="dropdown-menu-title-group">
-            <div className="dropdown-menu-title">Work</div>
-            <div className="dropdown-menu-subtitle">4932 Sixth Street, Westminster</div>
-          </section>
-        </IonItem>
+          <IonItem className="dropdown-menu-list-item" lines="full">
+            <IonIcon className="dropdown-menu-icon" src={WorkIcon}></IonIcon>
 
-        <IonItem className="dropdown-menu-list-item" lines="full">
-          <AddNewAddressIcon />
+            <section className="dropdown-menu-title-group">
+              <div className="dropdown-menu-title">Work</div>
+              <div className="dropdown-menu-subtitle">4932 Sixth Street, Westminster</div>
+            </section>
+          </IonItem>
 
-          <section className="dropdown-menu-title-group">
-            <div className="dropdown-menu-title title-orange">Add a new address</div>
-          </section>
-        </IonItem>
-      </IonList>
-    </IonContent>
-  </section>
-);
+          <IonItem className="dropdown-menu-list-item" lines="full">
+            <AddNewAddressIcon />
+
+            <section className="dropdown-menu-title-group">
+              <div className="dropdown-menu-title title-orange">Add a new address</div>
+            </section>
+          </IonItem>
+        </IonList>
+      </IonContent>
+    </section>
+  )
+};
 
 export default DropDownMenu;
