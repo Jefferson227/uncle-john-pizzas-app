@@ -14,6 +14,8 @@ const DropDownMenu: React.FC<DropDownMenuProps> = ({labelId}) => (
   <section>
     <input type="checkbox" id={labelId} className="dropdown-menu-checkbox" />
 
+    <div className="dropdown-menu-backdrop"></div>
+
     <IonContent className="dropdown-menu-content">
       <IonList className="dropdown-menu-list">
         <IonItem className="dropdown-menu-list-item" lines="full">
