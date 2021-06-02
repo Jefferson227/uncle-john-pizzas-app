@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import { IonContent, IonList, IonItem, IonIcon } from '@ionic/react';
 import './DropDownMenu.css';
 import CurrentLocationIcon from '../CurrentLocationIcon/CurrentLocationIcon';
@@ -12,17 +11,11 @@ interface DropDownMenuProps {
 }
 
 const DropDownMenu: React.FC<DropDownMenuProps> = ({labelId}) => {
-  const [dropDownMenuEnabled, setDropDownEnabled] = useState(false);
-  const test = () => {
-    console.log('backdrop clicked');
-    setDropDownEnabled(false);
-  };
-
   return (
     <section>
-      <input type="checkbox" id={labelId} className="dropdown-menu-checkbox" defaultChecked={dropDownMenuEnabled} />
+      <input type="checkbox" id={labelId} className="dropdown-menu-checkbox" />
 
-      <div className="dropdown-menu-backdrop" onClick={() => test()}></div>
+      <label className="dropdown-menu-backdrop" htmlFor={labelId}></label>
 
       <IonContent className="dropdown-menu-content">
         <IonList className="dropdown-menu-list">
