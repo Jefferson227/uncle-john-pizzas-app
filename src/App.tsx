@@ -2,7 +2,8 @@ import { Redirect, Route } from 'react-router-dom';
 import { IonApp, IonRouterOutlet } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
 import { setupConfig } from '@ionic/react';
-import Home from './pages/Home';
+import Home from './pages/Home/Home';
+import ChooseSize from './pages/ChooseSize/ChooseSize';
 import NavBar from './components/NavBar/NavBar';
 
 /* Custom CSS */
@@ -45,6 +46,9 @@ const App: React.FC = () => (
         </Route>
         <Route exact path="/">
           <Redirect to="/home" />
+        </Route>
+        <Route exact path="/choose-size">
+          <ChooseSize />
         </Route>
       </IonRouterOutlet>
     </IonReactRouter>

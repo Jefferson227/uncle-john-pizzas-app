@@ -1,7 +1,7 @@
-import { IonContent, IonPage } from '@ionic/react';
+import { IonContent, IonPage, IonItem, IonLabel } from '@ionic/react';
 import './Home.css';
-import ThinCrustPizzaPhoto from '../assets/img/thin-crust-pizza-photo.png';
-import ThickCrustPizzaPhoto from '../assets/img/thick-crust-pizza-photo.png';
+import ThinCrustPizzaPhoto from '../../assets/img/thin-crust-pizza-photo.png';
+import ThickCrustPizzaPhoto from '../../assets/img/thick-crust-pizza-photo.png';
 
 const Home: React.FC = () => {
   return (
