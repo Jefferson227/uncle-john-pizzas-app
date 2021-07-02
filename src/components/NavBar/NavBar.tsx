@@ -14,7 +14,7 @@ const NavBar: React.FC = () => {
     <section className="navbar-container">
       <SideMenu contentId={contentId}/>
 
-      <IonPage id={contentId}>
+      <IonPage id={contentId} className="navbar-ion-page">
         <IonHeader>
           <IonToolbar>
             <IonButtons slot="start">

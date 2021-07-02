@@ -11,6 +11,10 @@
   --background: #fff;
 }
 
+.navbar-ion-page {
+  height: 56px;
+}
+
 .navbar-center {
   width: 85%;
   display: inline-block;
