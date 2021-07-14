@@ -1,9 +1,12 @@
-import { IonContent, IonPage, IonItem, IonLabel } from '@ionic/react';
+import { IonContent, IonPage } from '@ionic/react';
 import './Home.css';
 import ThinCrustPizzaPhoto from '../../assets/img/thin-crust-pizza-photo.png';
 import ThickCrustPizzaPhoto from '../../assets/img/thick-crust-pizza-photo.png';
+import { useIonRouter } from '@ionic/react';
 
 const Home: React.FC = () => {
+  const router = useIonRouter();
+
   return (
     <IonPage>
       <IonContent fullscreen>
@@ -17,7 +20,7 @@ const Home: React.FC = () => {
 
         <section className="home-reorder-container">
           <div className="home-reorder-container-left">
-            <img src={ThinCrustPizzaPhoto} className="home-reorder-pizza-image" alt="Thin Crust Pizza"/>
+            <img src={ThinCrustPizzaPhoto} className="home-reorder-pizza-image" alt="Thin Crust Pizza" />
           </div>
 
           <div className="home-reorder-container-right">
@@ -31,7 +34,7 @@ const Home: React.FC = () => {
           </div>
         </section>
 
-        <section className="home-create-pizza-container">
+        <section className="home-create-pizza-container" onClick={() => router.push('/choose-size')}>
           <div className="home-create-pizza-header">
             <div className="home-create-pizza-title">Create your <strong>own pizza</strong></div>
 
@@ -39,7 +42,7 @@ const Home: React.FC = () => {
           </div>
 
           <div className="home-create-pizza-image-container">
-            <img src={ThickCrustPizzaPhoto} className="home-create-pizza-image" alt="Thick Crust Pizza"/>
+            <img src={ThickCrustPizzaPhoto} className="home-create-pizza-image" alt="Thick Crust Pizza" />
           </div>
         </section>
       </IonContent>
