@@ -1,18 +1,22 @@
 import React from 'react';
 import './NavBar.css';
 import MenuIcon from '../../assets/img/menu-icon.svg';
+import ArrowLeftIcon from '../../assets/img/arrow-left-icon.svg';
 import BasketIcon from '../../assets/img/basket-icon.svg';
 import SideMenu from '../SideMenu/SideMenu';
 import DropDownMenu from '../DropDownMenu/DropDownMenu';
 import { IonHeader, IonToolbar, IonPage, IonMenuButton, IonButtons, IonIcon } from '@ionic/react';
+import { useIonRouter } from '@ionic/react';
 
 const contentId = "main-content";
 const dropDownMenuId = "dropdown-menu-addresses";
 
 const NavBar: React.FC = () => {
+  const router = useIonRouter(); // Still need to check how to use this to display the icons dynamically
+
   return (
     <section className="navbar-container">
-      <SideMenu contentId={contentId}/>
+      <SideMenu contentId={contentId} />
 
       <IonPage id={contentId} className="navbar-ion-page">
         <IonHeader>
