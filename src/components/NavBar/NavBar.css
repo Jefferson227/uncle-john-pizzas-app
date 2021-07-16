@@ -2,6 +2,10 @@
   pointer-events: visible;
 }
 
+.navbar-ion-page.ion-page.menu-content.menu-content-overlay.ion-page-invisible {
+  opacity: 1;
+}
+
 .ion-menu-button {
   font-size: 14px;
   color: var(--base-text-color-gray-10);

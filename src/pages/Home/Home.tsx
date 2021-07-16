@@ -3,6 +3,7 @@ import './Home.css';
 import ThinCrustPizzaPhoto from '../../assets/img/thin-crust-pizza-photo.png';
 import ThickCrustPizzaPhoto from '../../assets/img/thick-crust-pizza-photo.png';
 import { useIonRouter } from '@ionic/react';
+import NavBar from '../../components/NavBar/NavBar';
 
 const Home: React.FC = () => {
   const router = useIonRouter();
@@ -10,6 +11,8 @@ const Home: React.FC = () => {
   return (
     <IonPage>
       <IonContent fullscreen>
+        <NavBar />
+
         <div className="home-padding-top"></div>
 
         <section className="home-header">

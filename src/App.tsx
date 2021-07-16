@@ -4,7 +4,6 @@ import { IonReactRouter } from '@ionic/react-router';
 import { setupConfig } from '@ionic/react';
 import Home from './pages/Home/Home';
 import ChooseSize from './pages/ChooseSize/ChooseSize';
-import NavBar from './components/NavBar/NavBar';
 
 /* Custom CSS */
 import './App.css';
@@ -53,7 +52,6 @@ const App: React.FC = () => (
       </IonRouterOutlet>
     </IonReactRouter>
 
-    <NavBar />
   </IonApp>
 );
 
