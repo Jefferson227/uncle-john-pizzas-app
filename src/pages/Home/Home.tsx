@@ -11,7 +11,9 @@ const Home: React.FC = () => {
   return (
     <IonPage>
       <IonContent fullscreen>
-        <NavBar />
+        <NavBar pageName="home"/>
+
+        <div className="home-padding-top"></div>
 
         <section className="home-header">
           <div className="home-greeting">Hi Jaykey!</div>

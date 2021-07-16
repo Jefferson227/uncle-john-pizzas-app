@@ -2,10 +2,6 @@
   pointer-events: all;
 }
 
-.navbar-ion-page.ion-page {
-  position: fixed;
-}
-
 .ion-menu-button {
   font-size: 14px;
   color: var(--base-text-color-gray-10);
@@ -17,6 +13,8 @@
 
 .navbar-ion-page {
   height: 56px;
+  position: fixed;
+  width: 100%;
 }
 
 .navbar-center {

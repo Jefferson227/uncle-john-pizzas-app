@@ -6,7 +6,7 @@ const ChooseSize: React.FC = () => {
   return (
     <IonPage>
       <IonContent fullscreen>
-        <NavBar />
+        <NavBar pageName="choose-size" />
 
         <p className="init">Hi, this is the sketch of the 'choose size' page.</p>
       </IonContent>

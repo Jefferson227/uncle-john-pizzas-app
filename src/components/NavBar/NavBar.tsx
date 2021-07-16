@@ -7,16 +7,20 @@ import SideMenu from '../SideMenu/SideMenu';
 import DropDownMenu from '../DropDownMenu/DropDownMenu';
 import { IonHeader, IonToolbar, IonMenuButton, IonButtons, IonIcon } from '@ionic/react';
 
+interface NavBarProps {
+  pageName: string;
+}
+
 const contentId = "main-content";
 const dropDownMenuId = "dropdown-menu-addresses";
 
-const NavBar: React.FC = () => {
+const NavBar: React.FC<NavBarProps> = ({pageName}) => {
 
   return (
     <section className="navbar-container">
-      <SideMenu contentId={contentId} />
+      <SideMenu contentId={`${contentId}-${pageName}`} />
 
-      <div id={contentId} className="navbar-ion-page">
+      <div id={`${contentId}-${pageName}`} className="navbar-ion-page">
         <IonHeader>
           <IonToolbar>
             <IonButtons slot="start">
@@ -25,7 +29,7 @@ const NavBar: React.FC = () => {
               </IonMenuButton>
             </IonButtons>
 
-            <label className="navbar-center" htmlFor={dropDownMenuId}>
+            <label className="navbar-center" htmlFor={`${dropDownMenuId}-${pageName}`}>
               <div className="title">Deliver to:</div>
               <div className="subtitle">Home</div>
             </label>
@@ -37,7 +41,7 @@ const NavBar: React.FC = () => {
         </IonHeader>
       </div>
 
-      <DropDownMenu labelId={dropDownMenuId} />
+      <DropDownMenu labelId={`${dropDownMenuId}-${pageName}`} />
     </section>
   )
 };
