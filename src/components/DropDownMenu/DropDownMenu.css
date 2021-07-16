@@ -9,6 +9,7 @@
   transform: translateX(-50%);
   transition: all 0.2s;
   border-top: 1px solid var(--base-text-color-gray-13);
+  z-index: 15;
 }
 
 .dropdown-menu-backdrop {
@@ -18,6 +19,7 @@
   width: 100%;
   height: 100%;
   display: none;
+  z-index: 10;
 }
 
 .dropdown-menu-checkbox {
