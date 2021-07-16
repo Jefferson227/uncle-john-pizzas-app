@@ -5,7 +5,7 @@ import MenuIcon from '../../assets/img/menu-icon.svg';
 import BasketIcon from '../../assets/img/basket-icon.svg';
 import SideMenu from '../SideMenu/SideMenu';
 import DropDownMenu from '../DropDownMenu/DropDownMenu';
-import { IonHeader, IonToolbar, IonPage, IonMenuButton, IonButtons, IonIcon } from '@ionic/react';
+import { IonHeader, IonToolbar, IonMenuButton, IonButtons, IonIcon } from '@ionic/react';
 
 const contentId = "main-content";
 const dropDownMenuId = "dropdown-menu-addresses";
