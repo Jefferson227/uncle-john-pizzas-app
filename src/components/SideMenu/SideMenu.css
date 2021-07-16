@@ -77,6 +77,7 @@ ion-menu::part(container) {
 .sidemenu-ion-menu {
   height: 744px;
   margin-top: 56px;
+  position: fixed;
 }
 
 .sidemenu-ion-menu::part(backdrop) {
