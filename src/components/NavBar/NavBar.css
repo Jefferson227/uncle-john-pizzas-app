@@ -2,7 +2,7 @@
   pointer-events: visible;
 }
 
-.navbar-ion-page.ion-page.menu-content.menu-content-overlay.ion-page-invisible {
+.navbar-ion-page.ion-page.ion-page-invisible {
   opacity: 1;
 }
 
