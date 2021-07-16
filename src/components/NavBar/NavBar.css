@@ -6,6 +6,10 @@
   opacity: 1;
 }
 
+.navbar-ion-page.ion-page {
+  position: fixed;
+}
+
 .ion-menu-button {
   font-size: 14px;
   color: var(--base-text-color-gray-10);
