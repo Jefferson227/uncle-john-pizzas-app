@@ -13,8 +13,6 @@ const Home: React.FC = () => {
       <IonContent fullscreen>
         <NavBar />
 
-        <div className="home-padding-top"></div>
-
         <section className="home-header">
           <div className="home-greeting">Hi Jaykey!</div>
 
