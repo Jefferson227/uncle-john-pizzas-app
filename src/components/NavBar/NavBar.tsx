@@ -16,7 +16,7 @@ const NavBar: React.FC = () => {
     <section className="navbar-container">
       <SideMenu contentId={contentId} />
 
-      <IonPage id={contentId} className="navbar-ion-page">
+      <div id={contentId} className="navbar-ion-page">
         <IonHeader>
           <IonToolbar>
             <IonButtons slot="start">
@@ -35,7 +35,7 @@ const NavBar: React.FC = () => {
             </section>
           </IonToolbar>
         </IonHeader>
-      </IonPage>
+      </div>
 
       <DropDownMenu labelId={dropDownMenuId} />
     </section>
