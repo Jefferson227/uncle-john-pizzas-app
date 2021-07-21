@@ -3,24 +3,21 @@ import './NavBar.css';
 import MenuIcon from '../../assets/img/menu-icon.svg';
 // import ArrowLeftIcon from '../../assets/img/arrow-left-icon.svg';
 import BasketIcon from '../../assets/img/basket-icon.svg';
-import SideMenu from '../SideMenu/SideMenu';
 import DropDownMenu from '../DropDownMenu/DropDownMenu';
 import { IonHeader, IonToolbar, IonMenuButton, IonButtons, IonIcon } from '@ionic/react';
 
 interface NavBarProps {
   pageName: string;
+  sideMenuContentId?: string;
 }
 
-const contentId = "main-content";
 const dropDownMenuId = "dropdown-menu-addresses";
 
-const NavBar: React.FC<NavBarProps> = ({pageName}) => {
+const NavBar: React.FC<NavBarProps> = ({pageName, sideMenuContentId = `${pageName}-navbar`}) => {
 
   return (
     <section className="navbar-container">
-      <SideMenu contentId={`${contentId}-${pageName}`} />
-
-      <div id={`${contentId}-${pageName}`} className="navbar-ion-page">
+      <div id={sideMenuContentId} className="navbar-ion-page">
         <IonHeader>
           <IonToolbar>
             <IonButtons slot="start">
