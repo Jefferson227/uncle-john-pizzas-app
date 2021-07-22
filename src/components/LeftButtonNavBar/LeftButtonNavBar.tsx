@@ -17,8 +17,7 @@ const LeftButtonNavBar: React.FC<LeftButtonNavBarProps> = ({type}) => {
 
   if (type === 'back')
     return (
-      /* Does not appear in the browser */
-      <IonBackButton className="ion-menu-button">
+      <IonBackButton className="ion-menu-button" defaultHref="/">
         <IonIcon src={ArrowLeftIcon}></IonIcon>
       </IonBackButton>
     );
