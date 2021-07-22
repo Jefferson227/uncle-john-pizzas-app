@@ -12,7 +12,7 @@ const Home: React.FC = () => {
   return (
     <IonPage>
       <IonContent fullscreen>
-        <NavBar pageName="home" sideMenuContentId="home-navbar" />
+        <NavBar pageName="home" sideMenuContentId="home-navbar" leftButtonType="menu" />
         <SideMenu contentId="home-navbar" />
 
         <div className="home-padding-top"></div>

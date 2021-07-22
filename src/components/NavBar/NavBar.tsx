@@ -1,29 +1,26 @@
 import React from 'react';
 import './NavBar.css';
-import MenuIcon from '../../assets/img/menu-icon.svg';
-// import ArrowLeftIcon from '../../assets/img/arrow-left-icon.svg';
 import BasketIcon from '../../assets/img/basket-icon.svg';
 import DropDownMenu from '../DropDownMenu/DropDownMenu';
-import { IonHeader, IonToolbar, IonMenuButton, IonButtons, IonIcon } from '@ionic/react';
+import { IonHeader, IonToolbar, IonButtons, IonIcon } from '@ionic/react';
+import LeftButtonNavBar from '../LeftButtonNavBar/LeftButtonNavBar';
 
 interface NavBarProps {
   pageName: string;
   sideMenuContentId?: string;
+  leftButtonType: string;
 }
 
 const dropDownMenuId = "dropdown-menu-addresses";
 
-const NavBar: React.FC<NavBarProps> = ({pageName, sideMenuContentId = `${pageName}-navbar`}) => {
-
+const NavBar: React.FC<NavBarProps> = ({pageName, sideMenuContentId = `${pageName}-navbar}`, leftButtonType}) => {
   return (
     <section className="navbar-container">
       <div id={sideMenuContentId} className="navbar-ion-page">
         <IonHeader>
           <IonToolbar>
             <IonButtons slot="start">
-              <IonMenuButton className="ion-menu-button">
-                <IonIcon src={MenuIcon}></IonIcon>
-              </IonMenuButton>
+              <LeftButtonNavBar type={leftButtonType} />
             </IonButtons>
 
             <label className="navbar-center" htmlFor={`${dropDownMenuId}-${pageName}`}>
