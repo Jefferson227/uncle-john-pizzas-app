@@ -1,6 +1,7 @@
 import React from 'react';
 import './NavBar.css';
 import BasketIcon from '../../assets/img/basket-icon.svg';
+import HomeIcon from '../../assets/img/gray-home-icon.svg';
 import DropDownMenu from '../DropDownMenu/DropDownMenu';
 import { IonHeader, IonToolbar, IonButtons, IonIcon } from '@ionic/react';
 import LeftButtonNavBar from '../LeftButtonNavBar/LeftButtonNavBar';
@@ -39,7 +40,7 @@ const NavBar: React.FC<NavBarProps> = ({pageName, sideMenuContentId = `${pageNam
             }
 
             <section className="navbar-end">
-              <IonIcon src={BasketIcon} className="basket-icon"></IonIcon>
+              <IonIcon src={pageName === 'home' ? BasketIcon : HomeIcon}></IonIcon>
             </section>
           </IonToolbar>
         </IonHeader>
