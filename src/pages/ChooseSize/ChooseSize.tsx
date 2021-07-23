@@ -8,7 +8,11 @@ const ChooseSize: React.FC = () => {
       <IonContent fullscreen>
         <NavBar pageName="choose-size" leftButtonType="back" />
 
-        <section className="first-background"></section>
+        <section className="first-background">
+          <div className="title">Create Your Pizza</div>
+          <div className="components">Size, Crust, Toppings</div>
+          <div className="price">$10.00</div>
+        </section>
       </IonContent>
     </IonPage>
   );

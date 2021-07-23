@@ -3,6 +3,7 @@ p.init {
 }
 
 .choose-size-page .first-background {
+  position: relative;
   height: 287px;
   background: linear-gradient(
     107.9deg,
@@ -10,4 +11,35 @@ p.init {
     var(--base-text-color-orange-10) 94.08%
   );
   margin-top: 56px;
+  padding: 21px 19px;
+}
+
+.choose-size-page .first-background .title {
+  font-family: RobotoLight;
+  font-size: 25px;
+  line-height: 29px;
+  letter-spacing: -0.3px;
+  color: #fff;
+}
+
+.choose-size-page .first-background .components {
+  font-family: RobotoBold;
+  font-style: normal;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.choose-size-page .first-background .price {
+  position: absolute;
+  top: 24px;
+  right: 23px;
+  font-family: RobotoBold;
+  font-style: normal;
+  font-size: 25px;
+  line-height: 29px;
+  letter-spacing: -0.3px;
+  color: #fff;
 }
