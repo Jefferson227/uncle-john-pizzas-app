@@ -23,10 +23,20 @@ const NavBar: React.FC<NavBarProps> = ({pageName, sideMenuContentId = `${pageNam
               <LeftButtonNavBar type={leftButtonType} />
             </IonButtons>
 
-            <label className="navbar-center" htmlFor={`${dropDownMenuId}-${pageName}`}>
-              <div className="title">Deliver to:</div>
-              <div className="subtitle">Home</div>
-            </label>
+            {
+              pageName === 'home'
+                ? (
+                  <label className="navbar-center" htmlFor={`${dropDownMenuId}-${pageName}`}>
+                    <div className="title">Deliver to:</div>
+                    <div className="subtitle">Home</div>
+                  </label>
+                )
+                : (
+                  <div className="navbar-center">
+                    <div className="title-center">Uncle John Pizzas</div>
+                  </div>
+                )
+            }
 
             <section className="navbar-end">
               <IonIcon src={BasketIcon} className="basket-icon"></IonIcon>

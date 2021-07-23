@@ -17,6 +17,12 @@
   display: inline-block;
 }
 
+.navbar-center .title-center {
+  text-align: center;
+  font-size: 15px;
+  color: var(--base-text-color-gray-10);
+}
+
 .navbar-center .title {
   font-family: RobotoLight;
   font-size: 14px;
