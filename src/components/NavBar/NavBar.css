@@ -13,6 +13,7 @@
 }
 
 .navbar-center {
+  font-family: RobotoLight;
   width: 85%;
   display: inline-block;
 }
@@ -24,7 +25,6 @@
 }
 
 .navbar-center .title {
-  font-family: RobotoLight;
   font-size: 14px;
   color: var(--base-text-color-gray-10);
 }
