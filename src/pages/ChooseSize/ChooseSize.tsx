@@ -4,11 +4,11 @@ import './ChooseSize.css';
 
 const ChooseSize: React.FC = () => {
   return (
-    <IonPage>
+    <IonPage className="choose-size-page">
       <IonContent fullscreen>
         <NavBar pageName="choose-size" leftButtonType="back" />
 
-        <p className="init">Hi, this is the sketch of the 'choose size' page.</p>
+        <section className="first-background"></section>
       </IonContent>
     </IonPage>
   );

@@ -1,3 +1,13 @@
 p.init {
   padding-top: 46px;
 }
+
+.choose-size-page .first-background {
+  height: 287px;
+  background: linear-gradient(
+    107.9deg,
+    var(--base-text-color-red-10) 1.55%,
+    var(--base-text-color-orange-10) 94.08%
+  );
+  margin-top: 56px;
+}
