@@ -2,11 +2,6 @@
   pointer-events: all;
 }
 
-.ion-menu-button {
-  font-size: 14px;
-  color: var(--base-text-color-gray-10);
-}
-
 .navbar-container ion-toolbar {
   --background: #fff;
 }
