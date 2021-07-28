@@ -43,3 +43,29 @@ p.init {
   letter-spacing: -0.3px;
   color: #fff;
 }
+
+.choose-size-page .first-background .pizza {
+  position: relative;
+  transform: translateY(100px);
+}
+
+.choose-size-page .first-background .pizza .image {
+  background: url(../../assets/img/pizza-thin-crust-menu.png) no-repeat;
+  transform: translate(54px, 5px);
+  width: 239px;
+  height: 239px;
+  z-index: 10;
+}
+
+.choose-size-page .first-background .pizza .background {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  content: "";
+  background-color: #fff;
+  width: 270px;
+  height: 270px;
+  z-index: 0;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}

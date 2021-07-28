@@ -12,6 +12,11 @@ const ChooseSize: React.FC = () => {
           <div className="title">Create Your Pizza</div>
           <div className="components">Size, Crust, Toppings</div>
           <div className="price">$10.00</div>
+
+          <div className="pizza">
+            <div className="background"></div>
+            <div className="image"></div>
+          </div>
         </section>
       </IonContent>
     </IonPage>
