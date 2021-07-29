@@ -12,6 +12,7 @@ p.init {
   );
   margin-top: 56px;
   padding: 21px 19px;
+  z-index: 10;
 }
 
 .choose-size-page .first-background .title {
@@ -59,18 +60,6 @@ p.init {
     drop-shadow(0px 4px 8px rgba(109, 110, 156, 0.4));
 }
 
-.choose-size-page .first-background .pizza .outlined-background {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 401px;
-  height: 401px;
-  border-radius: 50%;
-  transform: translate(-50%, -50%);
-  border: 0.5px solid var(--base-text-color-gray-13);
-  box-sizing: border-box;
-}
-
 .choose-size-page .first-background .pizza .blurry-background {
   position: absolute;
   top: 50%;
@@ -93,4 +82,17 @@ p.init {
   border-radius: 50%;
   transform: translate(-50%, -50%);
   box-shadow: 0px 4px 15px rgba(218, 218, 229, 0.2);
+}
+
+.choose-size-page .outlined-background {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 401px;
+  height: 401px;
+  border-radius: 50%;
+  transform: translate(-50%, -66%);
+  border: 0.5px solid var(--base-text-color-gray-13);
+  box-sizing: border-box;
+  z-index: 0;
 }

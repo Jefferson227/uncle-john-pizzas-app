@@ -14,12 +14,13 @@ const ChooseSize: React.FC = () => {
           <div className="price">$10.00</div>
 
           <div className="pizza">
-            <div className="outlined-background"></div>
             <div className="blurry-background"></div>
             <div className="background"></div>
             <div className="image"></div>
           </div>
         </section>
+
+        <section className="outlined-background"></section>
       </IonContent>
     </IonPage>
   );
