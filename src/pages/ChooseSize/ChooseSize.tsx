@@ -20,7 +20,9 @@ const ChooseSize: React.FC = () => {
           </div>
         </section>
 
-        <section className="outlined-background"></section>
+        <section className="outlined-background">
+          <div className="text">12''</div>
+        </section>
       </IonContent>
     </IonPage>
   );
