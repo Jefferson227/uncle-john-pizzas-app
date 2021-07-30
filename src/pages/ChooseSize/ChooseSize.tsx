@@ -25,6 +25,27 @@ const ChooseSize: React.FC = () => {
             <span className="text">12''</span>
           </div>
         </section>
+
+        <section className="options">
+          <div className="title">Choose your <strong>size</strong></div>
+
+          <section className="buttons">
+            <div className="button">
+              <input type="radio" value="small" id="pizza-size-small" />
+              <label htmlFor="pizza-size-small">Small</label>
+            </div>
+
+            <div className="button">
+              <input type="radio" value="medium" id="pizza-size-medium" />
+              <label htmlFor="pizza-size-medium">Medium</label>
+            </div>
+
+            <div className="button">
+              <input type="radio" value="large" id="pizza-size-large" />
+              <label htmlFor="pizza-size-large">Large</label>
+            </div>
+          </section>
+        </section>
       </IonContent>
     </IonPage>
   );
