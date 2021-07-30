@@ -97,16 +97,21 @@ p.init {
   z-index: 0;
 }
 
-.choose-size-page .outlined-background .text {
+.choose-size-page .outlined-background .background {
   position: absolute;
   bottom: 0;
-  left: 37%;
+  left: 39%;
   transform: translate(50%, 50%);
   background: var(--base-text-color-gray-13);
   border-radius: 10px;
+  width: 48px;
+  padding: 2px 0;
+  text-align: center;
+}
+
+.choose-size-page .outlined-background .background .text {
   font-size: 10px;
   font-family: "RobotoBold";
   color: var(--base-text-color-gray-05);
-  padding: 4px 17px;
   letter-spacing: 1px;
 }
