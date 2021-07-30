@@ -142,10 +142,49 @@ p.init {
 .choose-size-page .options .buttons {
   display: flex;
   justify-content: space-evenly;
-  margin-top: 35px;
-  padding-bottom: 43px;
+  margin-top: 32px;
+  padding-bottom: 46px;
+}
+
+.choose-size-page .options .buttons .button label {
+  position: relative;
+}
+
+.choose-size-page .options .buttons .button label .background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  background: linear-gradient(
+    107.9deg,
+    var(--base-text-color-red-10) 1.55%,
+    var(--base-text-color-orange-10) 94.08%
+  );
+  box-shadow: 0px 6px 25px rgb(245 49 63 / 40%);
+  border-radius: 20px;
+  width: 84px;
+  height: 25px;
+  transform: translate(-14px, -1px);
+}
+
+.choose-size-page .options .buttons .button label span {
+  position: relative;
+  z-index: 10;
 }
 
 .choose-size-page .options .buttons .button input[type="radio"] {
   visibility: hidden;
+}
+
+.choose-size-page
+  .options
+  .buttons
+  .button
+  input[type="radio"]:checked
+  + .label-background {
+  /* color: #fff;
+  font-family: RobotoBold;
+  background: linear-gradient(107.9deg, #f5313f 1.55%, #ffa360 94.08%);
+  box-shadow: 0px 6px 25px rgba(245, 49, 63, 0.4); */
+  border-radius: 20px;
 }
