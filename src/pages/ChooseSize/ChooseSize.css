@@ -123,18 +123,29 @@ p.init {
   background: rgba(255, 255, 255, 0.6);
   box-shadow: 0px 4px 15px rgb(218 218 229 / 20%);
   border-radius: 20px;
+  color: var(--base-text-color-gray-10);
+  font-family: RobotoLight;
+  letter-spacing: -0.3px;
 }
 
 .choose-size-page .options .title {
   text-align: center;
   padding-top: 20px;
-  letter-spacing: -0.3px;
   line-height: 23px;
   font-size: 20px;
-  font-family: RobotoLight;
-  color: var(--base-text-color-gray-10);
 }
 
 .choose-size-page .options .title strong {
   font-family: RobotoBold;
+}
+
+.choose-size-page .options .buttons {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 35px;
+  padding-bottom: 43px;
+}
+
+.choose-size-page .options .buttons .button input[type="radio"] {
+  visibility: hidden;
 }
