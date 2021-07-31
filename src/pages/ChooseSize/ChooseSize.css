@@ -172,9 +172,19 @@ p.init {
   );
   box-shadow: 0px 6px 25px rgb(245 49 63 / 40%);
   border-radius: 20px;
-  width: 84px;
-  height: 25px;
+  width: 98px;
+  height: 38px;
   transform: translate(-50%, -50%);
+}
+
+.choose-size-page
+  .options
+  .buttons
+  .button
+  input[type="radio"]:checked
+  + label {
+  font-family: RobotoBold;
+  color: #fff;
 }
 
 .choose-size-page .options .buttons .button label span {
