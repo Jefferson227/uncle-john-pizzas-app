@@ -154,7 +154,13 @@ p.init {
   position: relative;
 }
 
-.choose-size-page .options .buttons .button label .background {
+.choose-size-page
+  .options
+  .buttons
+  .button
+  input[type="radio"]:checked
+  + label
+  .background {
   position: absolute;
   top: 50%;
   left: 50%;
