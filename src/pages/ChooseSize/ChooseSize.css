@@ -152,8 +152,8 @@ p.init {
 
 .choose-size-page .options .buttons .button label .background {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 50%;
+  left: 50%;
   z-index: 0;
   background: linear-gradient(
     107.9deg,
@@ -164,7 +164,7 @@ p.init {
   border-radius: 20px;
   width: 84px;
   height: 25px;
-  transform: translate(-14px, -1px);
+  transform: translate(-50%, -50%);
 }
 
 .choose-size-page .options .buttons .button label span {
