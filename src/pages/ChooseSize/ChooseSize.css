@@ -146,6 +146,10 @@ p.init {
   padding-bottom: 46px;
 }
 
+.choose-size-page .options .buttons .button {
+  position: relative;
+}
+
 .choose-size-page .options .buttons .button label {
   position: relative;
 }
@@ -175,4 +179,5 @@ p.init {
 
 .choose-size-page .options .buttons .button input[type="radio"] {
   visibility: hidden;
+  position: absolute;
 }
