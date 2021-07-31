@@ -143,11 +143,13 @@ p.init {
   display: flex;
   justify-content: space-evenly;
   margin-top: 32px;
-  padding-bottom: 46px;
+  padding: 0 20px 46px 20px;
+  text-align: center;
 }
 
 .choose-size-page .options .buttons .button {
   position: relative;
+  width: 98px;
 }
 
 .choose-size-page .options .buttons .button label {
@@ -163,7 +165,7 @@ p.init {
   .background {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 0;
   z-index: 0;
   background: linear-gradient(
     107.9deg,
