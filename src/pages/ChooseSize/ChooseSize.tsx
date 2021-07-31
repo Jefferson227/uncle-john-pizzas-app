@@ -58,6 +58,10 @@ const ChooseSize: React.FC = () => {
             </div>
           </section>
         </section>
+
+        <section className="footer">
+          <button>Next</button>
+        </section>
       </IonContent>
     </IonPage>
   );
