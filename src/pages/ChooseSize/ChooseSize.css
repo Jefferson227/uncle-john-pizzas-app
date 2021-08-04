@@ -45,13 +45,13 @@ p.init {
   color: #fff;
 }
 
-.choose-size-page .first-background .pizza {
+.choose-size-page .first-background .pizza-medium {
   position: relative;
   transform: translateY(100px);
 }
 
-.choose-size-page .first-background .pizza .image {
-  background: url(../../assets/img/pizza-thin-crust-menu.png) no-repeat;
+.choose-size-page .first-background .pizza-medium .image {
+  background: url(../../assets/img/pizza-thin-crust-medium.png) no-repeat;
   transform: translate(54px, 5px);
   width: 239px;
   height: 239px;
@@ -60,7 +60,7 @@ p.init {
     drop-shadow(0px 4px 8px rgba(109, 110, 156, 0.4));
 }
 
-.choose-size-page .first-background .pizza .blurry-background {
+.choose-size-page .first-background .pizza-medium .blurry-background {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -72,7 +72,46 @@ p.init {
   backdrop-filter: blur(10px);
 }
 
-.choose-size-page .first-background .pizza .background {
+.choose-size-page .first-background .pizza-small {
+  position: relative;
+  transform: translateY(100px);
+}
+
+.choose-size-page .first-background .pizza-small .image {
+  background: url(../../assets/img/pizza-thin-crust-small.png) no-repeat;
+  transform: translate(67px, 2px);
+  width: 216px;
+  height: 216px;
+  z-index: 10;
+  filter: drop-shadow(0px 20px 50px rgba(255, 126, 32, 0.2))
+    drop-shadow(0px 4px 8px rgba(109, 110, 156, 0.4));
+}
+
+.choose-size-page .first-background .pizza-small .blurry-background {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: rgba(255, 255, 255, 0.6);
+  width: 304px;
+  height: 304px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  backdrop-filter: blur(10px);
+}
+
+.choose-size-page .first-background .pizza-small .background {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: #fff;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 4px 15px rgba(218, 218, 229, 0.2);
+}
+
+.choose-size-page .first-background .pizza-medium .background {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -84,7 +123,7 @@ p.init {
   box-shadow: 0px 4px 15px rgba(218, 218, 229, 0.2);
 }
 
-.choose-size-page .outlined-background {
+.choose-size-page .outlined-background-medium {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -97,7 +136,7 @@ p.init {
   z-index: 0;
 }
 
-.choose-size-page .outlined-background .background {
+.choose-size-page .outlined-background-medium .background {
   position: absolute;
   bottom: 0;
   left: 39%;
@@ -109,7 +148,39 @@ p.init {
   text-align: center;
 }
 
-.choose-size-page .outlined-background .background .text {
+.choose-size-page .outlined-background-medium .background .text {
+  font-size: 10px;
+  font-family: "RobotoBold";
+  color: var(--base-text-color-gray-05);
+  letter-spacing: 1px;
+}
+
+.choose-size-page .outlined-background-small {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 376px;
+  height: 362px;
+  border-radius: 50%;
+  transform: translate(-50%, -70%);
+  border: 0.5px solid var(--base-text-color-gray-13);
+  box-sizing: border-box;
+  z-index: 0;
+}
+
+.choose-size-page .outlined-background-small .background {
+  position: absolute;
+  bottom: 0;
+  left: 39%;
+  transform: translate(50%, 50%);
+  background: var(--base-text-color-gray-13);
+  border-radius: 10px;
+  width: 48px;
+  padding: 2px 0;
+  text-align: center;
+}
+
+.choose-size-page .outlined-background-small .background .text {
   font-size: 10px;
   font-family: "RobotoBold";
   color: var(--base-text-color-gray-05);

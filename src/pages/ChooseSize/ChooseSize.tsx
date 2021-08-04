@@ -20,18 +20,42 @@ const ChooseSize: React.FC = () => {
           <div className="components">Size, Crust, Toppings</div>
           <div className="price">$10.00</div>
 
-          <div className="pizza">
-            <div className="blurry-background"></div>
-            <div className="background"></div>
-            <div className="image"></div>
-          </div>
+          {
+            size === 12 || size === 14
+              ? (
+                <div className="pizza-medium">
+                  <div className="blurry-background"></div>
+                  <div className="background"></div>
+                  <div className="image"></div>
+                </div>
+              )
+              : (
+                <div className="pizza-small">
+                  <div className="blurry-background"></div>
+                  <div className="background"></div>
+                  <div className="image"></div>
+                </div>
+              )
+          }
         </section>
 
-        <section className="outlined-background">
-          <div className="background">
-            <span className="text">{size}''</span>
-          </div>
-        </section>
+        {
+          size === 12 || size === 14
+            ? (
+              <section className="outlined-background-medium">
+                <div className="background">
+                  <span className="text">{size}''</span>
+                </div>
+              </section>
+            )
+            : (
+              <section className="outlined-background-small">
+                <div className="background">
+                  <span className="text">{size}''</span>
+                </div>
+              </section>
+            )
+        }
 
         <section className="options">
           <div className="title">Choose your <strong>size</strong></div>
