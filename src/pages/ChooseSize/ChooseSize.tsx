@@ -21,7 +21,19 @@ const ChooseSize: React.FC = () => {
           <div className="price">$10.00</div>
 
           {
-            size === 12 || size === 14
+            size === 10
+              ? (
+                <div className="pizza-small">
+                  <div className="blurry-background"></div>
+                  <div className="background"></div>
+                  <div className="image"></div>
+                </div>
+              )
+              : null
+          }
+
+          {
+            size === 12
               ? (
                 <div className="pizza-medium">
                   <div className="blurry-background"></div>
@@ -29,18 +41,36 @@ const ChooseSize: React.FC = () => {
                   <div className="image"></div>
                 </div>
               )
-              : (
-                <div className="pizza-small">
+              : null
+          }
+
+          {
+            size === 14
+              ? (
+                <div className="pizza-large">
                   <div className="blurry-background"></div>
                   <div className="background"></div>
                   <div className="image"></div>
                 </div>
               )
+              : null
           }
         </section>
 
         {
-          size === 12 || size === 14
+          size === 10
+            ? (
+              <section className="outlined-background-small">
+                <div className="background">
+                  <span className="text">{size}''</span>
+                </div>
+              </section>
+            )
+            : null
+        }
+
+        {
+          size === 12
             ? (
               <section className="outlined-background-medium">
                 <div className="background">
@@ -48,13 +78,19 @@ const ChooseSize: React.FC = () => {
                 </div>
               </section>
             )
-            : (
-              <section className="outlined-background-small">
+            : null
+        }
+
+        {
+          size === 14
+            ? (
+              <section className="outlined-background-large">
                 <div className="background">
                   <span className="text">{size}''</span>
                 </div>
               </section>
             )
+            : null
         }
 
         <section className="options">
