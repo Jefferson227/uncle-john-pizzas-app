@@ -1,8 +1,15 @@
+import React, { useState, useEffect } from 'react';
 import { IonContent, IonPage } from '@ionic/react';
 import NavBar from '../../components/NavBar/NavBar';
 import './ChooseSize.css';
 
 const ChooseSize: React.FC = () => {
+  const [size, setSize] = useState(12);
+
+  useEffect(() => {
+    console.log(size);
+  });
+
   return (
     <IonPage className="choose-size-page">
       <IonContent fullscreen>
@@ -22,7 +29,7 @@ const ChooseSize: React.FC = () => {
 
         <section className="outlined-background">
           <div className="background">
-            <span className="text">12''</span>
+            <span className="text">{size}''</span>
           </div>
         </section>
 
@@ -31,7 +38,7 @@ const ChooseSize: React.FC = () => {
 
           <section className="buttons">
             <div className="button">
-              <input type="radio" name="pizza-size" value="small" id="pizza-size-small" />
+              <input type="radio" name="pizza-size" value="small" id="pizza-size-small" onClick={() => setSize(10)} />
 
               <label htmlFor="pizza-size-small">
                 <div className="background"></div>
@@ -40,7 +47,7 @@ const ChooseSize: React.FC = () => {
             </div>
 
             <div className="button">
-              <input type="radio" name="pizza-size" value="medium" id="pizza-size-medium" />
+              <input type="radio" name="pizza-size" value="medium" id="pizza-size-medium" onClick={() => setSize(12)} />
 
               <label htmlFor="pizza-size-medium">
                 <div className="background"></div>
@@ -49,7 +56,7 @@ const ChooseSize: React.FC = () => {
             </div>
 
             <div className="button">
-              <input type="radio" name="pizza-size" value="large" id="pizza-size-large" />
+              <input type="radio" name="pizza-size" value="large" id="pizza-size-large" onClick={() => setSize(14)} />
 
               <label htmlFor="pizza-size-large">
                 <div className="background"></div>
