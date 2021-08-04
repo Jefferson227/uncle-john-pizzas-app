@@ -91,7 +91,7 @@ p.init {
 
 .choose-size-page .first-background .pizza-small .image {
   background: url(../../assets/img/pizza-thin-crust-small.png) no-repeat;
-  transform: translate(67px, 2px);
+  transform: translate(67px, 12px);
   width: 216px;
   height: 216px;
   z-index: 10;
@@ -107,7 +107,7 @@ p.init {
   width: 304px;
   height: 304px;
   border-radius: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -46%);
   backdrop-filter: blur(10px);
 }
 
@@ -119,7 +119,7 @@ p.init {
   width: 250px;
   height: 250px;
   border-radius: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -46%);
   box-shadow: 0px 4px 15px rgba(218, 218, 229, 0.2);
 }
 
@@ -201,7 +201,7 @@ p.init {
   width: 376px;
   height: 362px;
   border-radius: 50%;
-  transform: translate(-50%, -70%);
+  transform: translate(-50%, -66%);
   border: 0.5px solid var(--base-text-color-gray-13);
   box-sizing: border-box;
   z-index: 0;
