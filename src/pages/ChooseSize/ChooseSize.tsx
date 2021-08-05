@@ -5,6 +5,14 @@ import './ChooseSize.css';
 
 const ChooseSize: React.FC = () => {
   const [size, setSize] = useState(12);
+  const getSizeName = (size: number) => {
+    switch (size) {
+      case 10: return 'small';
+      case 12: return 'medium';
+      case 14: return 'large';
+      default: return 'medium';
+    }
+  };
 
   useEffect(() => {
     console.log(size);
@@ -20,78 +28,18 @@ const ChooseSize: React.FC = () => {
           <div className="components">Size, Crust, Toppings</div>
           <div className="price">$10.00</div>
 
-          {
-            size === 10
-              ? (
-                <div className="pizza-small">
-                  <div className="blurry-background"></div>
-                  <div className="background"></div>
-                  <div className="image"></div>
-                </div>
-              )
-              : null
-          }
-
-          {
-            size === 12
-              ? (
-                <div className="pizza-medium">
-                  <div className="blurry-background"></div>
-                  <div className="background"></div>
-                  <div className="image"></div>
-                </div>
-              )
-              : null
-          }
-
-          {
-            size === 14
-              ? (
-                <div className="pizza-large">
-                  <div className="blurry-background"></div>
-                  <div className="background"></div>
-                  <div className="image"></div>
-                </div>
-              )
-              : null
-          }
+          <div className={`pizza-${getSizeName(size)}`}>
+            <div className="blurry-background"></div>
+            <div className="background"></div>
+            <div className="image"></div>
+          </div>
         </section>
 
-        {
-          size === 10
-            ? (
-              <section className="outlined-background-small">
-                <div className="background">
-                  <span className="text">{size}''</span>
-                </div>
-              </section>
-            )
-            : null
-        }
-
-        {
-          size === 12
-            ? (
-              <section className="outlined-background-medium">
-                <div className="background">
-                  <span className="text">{size}''</span>
-                </div>
-              </section>
-            )
-            : null
-        }
-
-        {
-          size === 14
-            ? (
-              <section className="outlined-background-large">
-                <div className="background">
-                  <span className="text">{size}''</span>
-                </div>
-              </section>
-            )
-            : null
-        }
+        <section className={`outlined-background-${getSizeName(size)}`}>
+          <div className="background">
+            <span className="text">{size}''</span>
+          </div>
+        </section>
 
         <section className="options">
           <div className="title">Choose your <strong>size</strong></div>
