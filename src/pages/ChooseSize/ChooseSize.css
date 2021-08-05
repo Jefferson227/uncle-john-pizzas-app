@@ -45,121 +45,90 @@ p.init {
   color: #fff;
 }
 
-.choose-size-page .first-background .pizza-medium {
+.choose-size-page .first-background .pizza {
   position: relative;
   transform: translateY(100px);
 }
 
-.choose-size-page .first-background .pizza-medium .image {
+.choose-size-page .first-background .pizza .image {
+  z-index: 10;
+  filter: drop-shadow(0px 20px 50px rgba(255, 126, 32, 0.2))
+    drop-shadow(0px 4px 8px rgba(109, 110, 156, 0.4));
+}
+
+.choose-size-page .first-background .pizza .blurry-background {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  backdrop-filter: blur(10px);
+}
+
+.choose-size-page .first-background .pizza .background {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0px 4px 15px rgba(218, 218, 229, 0.2);
+}
+
+.choose-size-page .first-background .pizza.medium .image {
   background: url(../../assets/img/pizza-thin-crust-medium.png) no-repeat;
   transform: translate(54px, 5px);
   width: 239px;
   height: 239px;
-  z-index: 10;
-  filter: drop-shadow(0px 20px 50px rgba(255, 126, 32, 0.2))
-    drop-shadow(0px 4px 8px rgba(109, 110, 156, 0.4));
 }
 
-.choose-size-page .first-background .pizza-medium .blurry-background {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  background: rgba(255, 255, 255, 0.6);
+.choose-size-page .first-background .pizza.medium .blurry-background {
   width: 325px;
   height: 325px;
-  border-radius: 50%;
   transform: translate(-50%, -50%);
-  backdrop-filter: blur(10px);
 }
 
-.choose-size-page .first-background .pizza-medium .background {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  background-color: #fff;
+.choose-size-page .first-background .pizza.medium .background {
   width: 273px;
   height: 273px;
-  border-radius: 50%;
   transform: translate(-50%, -50%);
-  box-shadow: 0px 4px 15px rgba(218, 218, 229, 0.2);
 }
 
-.choose-size-page .first-background .pizza-small {
-  position: relative;
-  transform: translateY(100px);
-}
-
-.choose-size-page .first-background .pizza-small .image {
+.choose-size-page .first-background .pizza.small .image {
   background: url(../../assets/img/pizza-thin-crust-small.png) no-repeat;
   transform: translate(67px, 12px);
   width: 216px;
   height: 216px;
-  z-index: 10;
-  filter: drop-shadow(0px 20px 50px rgba(255, 126, 32, 0.2))
-    drop-shadow(0px 4px 8px rgba(109, 110, 156, 0.4));
 }
 
-.choose-size-page .first-background .pizza-small .blurry-background {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  background: rgba(255, 255, 255, 0.6);
+.choose-size-page .first-background .pizza.small .blurry-background {
   width: 304px;
   height: 304px;
-  border-radius: 50%;
   transform: translate(-50%, -46%);
-  backdrop-filter: blur(10px);
 }
 
-.choose-size-page .first-background .pizza-small .background {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  background-color: #fff;
+.choose-size-page .first-background .pizza.small .background {
   width: 250px;
   height: 250px;
-  border-radius: 50%;
   transform: translate(-50%, -46%);
-  box-shadow: 0px 4px 15px rgba(218, 218, 229, 0.2);
 }
 
-.choose-size-page .first-background .pizza-large {
-  position: relative;
-  transform: translateY(100px);
-}
-
-.choose-size-page .first-background .pizza-large .image {
+.choose-size-page .first-background .pizza.large .image {
   background: url(../../assets/img/pizza-thin-crust-large.png) no-repeat;
   transform: translate(33px, -17px);
   width: 286px;
   height: 286px;
-  z-index: 10;
-  filter: drop-shadow(0px 20px 50px rgba(255, 126, 32, 0.2))
-    drop-shadow(0px 4px 8px rgba(109, 110, 156, 0.4));
 }
 
-.choose-size-page .first-background .pizza-large .blurry-background {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  background: rgba(255, 255, 255, 0.6);
+.choose-size-page .first-background .pizza.large .blurry-background {
   width: 345px;
   height: 345px;
-  border-radius: 50%;
   transform: translate(-50%, -57%);
-  backdrop-filter: blur(10px);
 }
 
-.choose-size-page .first-background .pizza-large .background {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  background-color: #fff;
+.choose-size-page .first-background .pizza.large .background {
   width: 313px;
   height: 313px;
-  border-radius: 50%;
   transform: translate(-50%, -57%);
-  box-shadow: 0px 4px 15px rgba(218, 218, 229, 0.2);
 }
 
 .choose-size-page .outlined-background-medium {

@@ -28,7 +28,7 @@ const ChooseSize: React.FC = () => {
           <div className="components">Size, Crust, Toppings</div>
           <div className="price">$10.00</div>
 
-          <div className={`pizza-${getSizeName(size)}`}>
+          <div className={`pizza ${getSizeName(size)}`}>
             <div className="blurry-background"></div>
             <div className="background"></div>
             <div className="image"></div>
