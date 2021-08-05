@@ -13,6 +13,14 @@ const ChooseSize: React.FC = () => {
       default: return 'medium';
     }
   };
+  const getPrice = (size: number) => {
+    switch (size) {
+      case 10: return '8.00';
+      case 12: return '10.00';
+      case 14: return '12.00';
+      default: return '10.00';
+    }
+  };
 
   useEffect(() => {
     console.log(size);
@@ -26,7 +34,7 @@ const ChooseSize: React.FC = () => {
         <section className="first-background">
           <div className="title">Create Your Pizza</div>
           <div className="components">Size, Crust, Toppings</div>
-          <div className="price">$10.00</div>
+          <div className="price">${getPrice(size)}</div>
 
           <div className={`pizza ${getSizeName(size)}`}>
             <div className="blurry-background"></div>
