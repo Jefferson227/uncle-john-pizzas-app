@@ -35,7 +35,7 @@ const ChooseSize: React.FC = () => {
           </div>
         </section>
 
-        <section className={`outlined-background-${getSizeName(size)}`}>
+        <section className={`outlined-background ${getSizeName(size)}`}>
           <div className="background">
             <span className="text">{size}''</span>
           </div>

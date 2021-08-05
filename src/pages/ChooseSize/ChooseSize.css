@@ -131,100 +131,51 @@ p.init {
   transform: translate(-50%, -57%);
 }
 
-.choose-size-page .outlined-background-medium {
+.choose-size-page .outlined-background {
   position: absolute;
   top: 50%;
   left: 50%;
+  border-radius: 50%;
+  border: 0.5px solid var(--base-text-color-gray-13);
+  box-sizing: border-box;
+  z-index: 0;
+}
+
+.choose-size-page .outlined-background .background {
+  position: absolute;
+  bottom: 0;
+  left: 39%;
+  transform: translate(50%, 50%);
+  background: var(--base-text-color-gray-13);
+  border-radius: 10px;
+  width: 48px;
+  padding: 2px 0;
+  text-align: center;
+}
+
+.choose-size-page .outlined-background .background .text {
+  font-size: 10px;
+  font-family: "RobotoBold";
+  color: var(--base-text-color-gray-05);
+  letter-spacing: 1px;
+}
+
+.choose-size-page .outlined-background.medium {
   width: 401px;
   height: 401px;
-  border-radius: 50%;
   transform: translate(-50%, -66%);
-  border: 0.5px solid var(--base-text-color-gray-13);
-  box-sizing: border-box;
-  z-index: 0;
 }
 
-.choose-size-page .outlined-background-medium .background {
-  position: absolute;
-  bottom: 0;
-  left: 39%;
-  transform: translate(50%, 50%);
-  background: var(--base-text-color-gray-13);
-  border-radius: 10px;
-  width: 48px;
-  padding: 2px 0;
-  text-align: center;
-}
-
-.choose-size-page .outlined-background-medium .background .text {
-  font-size: 10px;
-  font-family: "RobotoBold";
-  color: var(--base-text-color-gray-05);
-  letter-spacing: 1px;
-}
-
-.choose-size-page .outlined-background-small {
-  position: absolute;
-  top: 50%;
-  left: 50%;
+.choose-size-page .outlined-background.small {
   width: 376px;
   height: 362px;
-  border-radius: 50%;
   transform: translate(-50%, -66%);
-  border: 0.5px solid var(--base-text-color-gray-13);
-  box-sizing: border-box;
-  z-index: 0;
 }
 
-.choose-size-page .outlined-background-small .background {
-  position: absolute;
-  bottom: 0;
-  left: 39%;
-  transform: translate(50%, 50%);
-  background: var(--base-text-color-gray-13);
-  border-radius: 10px;
-  width: 48px;
-  padding: 2px 0;
-  text-align: center;
-}
-
-.choose-size-page .outlined-background-small .background .text {
-  font-size: 10px;
-  font-family: "RobotoBold";
-  color: var(--base-text-color-gray-05);
-  letter-spacing: 1px;
-}
-
-.choose-size-page .outlined-background-large {
-  position: absolute;
-  top: 50%;
-  left: 50%;
+.choose-size-page .outlined-background.large {
   width: 411px;
   height: 396px;
-  border-radius: 50%;
   transform: translate(-50%, -65%);
-  border: 0.5px solid var(--base-text-color-gray-13);
-  box-sizing: border-box;
-  z-index: 0;
-}
-
-.choose-size-page .outlined-background-large .background {
-  position: absolute;
-  bottom: 0;
-  left: 39%;
-  transform: translate(50%, 50%);
-  background: var(--base-text-color-gray-13);
-  border-radius: 10px;
-  width: 48px;
-  padding: 2px 0;
-  text-align: center;
-}
-
-.choose-size-page .outlined-background-large .background .text {
-  font-size: 10px;
-  font-family: "RobotoBold";
-  color: var(--base-text-color-gray-05);
-  letter-spacing: 1px;
 }
 
 .choose-size-page .options {
