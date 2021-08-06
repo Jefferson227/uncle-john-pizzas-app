@@ -1,8 +1,4 @@
-p.init {
-  padding-top: 46px;
-}
-
-.choose-size-page .first-background {
+.create-your-pizza .first-background {
   position: relative;
   height: 287px;
   background: linear-gradient(
@@ -15,7 +11,7 @@ p.init {
   z-index: 10;
 }
 
-.choose-size-page .first-background .title {
+.create-your-pizza .first-background .title {
   font-family: RobotoLight;
   font-size: 25px;
   line-height: 29px;
@@ -23,7 +19,7 @@ p.init {
   color: #fff;
 }
 
-.choose-size-page .first-background .components {
+.create-your-pizza .first-background .components {
   font-family: RobotoBold;
   font-style: normal;
   font-size: 10px;
@@ -33,7 +29,7 @@ p.init {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.choose-size-page .first-background .price {
+.create-your-pizza .first-background .price {
   position: absolute;
   top: 24px;
   right: 23px;
@@ -45,18 +41,18 @@ p.init {
   color: #fff;
 }
 
-.choose-size-page .first-background .pizza {
+.create-your-pizza .first-background .pizza {
   position: relative;
   transform: translateY(100px);
 }
 
-.choose-size-page .first-background .pizza .image {
+.create-your-pizza .first-background .pizza .image {
   z-index: 10;
   filter: drop-shadow(0px 20px 50px rgba(255, 126, 32, 0.2))
     drop-shadow(0px 4px 8px rgba(109, 110, 156, 0.4));
 }
 
-.choose-size-page .first-background .pizza .blurry-background {
+.create-your-pizza .first-background .pizza .blurry-background {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -65,7 +61,7 @@ p.init {
   backdrop-filter: blur(10px);
 }
 
-.choose-size-page .first-background .pizza .background {
+.create-your-pizza .first-background .pizza .background {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -74,64 +70,64 @@ p.init {
   box-shadow: 0px 4px 15px rgba(218, 218, 229, 0.2);
 }
 
-.choose-size-page .first-background .pizza.medium .image {
+.create-your-pizza .first-background .pizza.medium .image {
   background: url(../../assets/img/pizza-thin-crust-medium.png) no-repeat;
   transform: translate(54px, 5px);
   width: 239px;
   height: 239px;
 }
 
-.choose-size-page .first-background .pizza.medium .blurry-background {
+.create-your-pizza .first-background .pizza.medium .blurry-background {
   width: 325px;
   height: 325px;
   transform: translate(-50%, -50%);
 }
 
-.choose-size-page .first-background .pizza.medium .background {
+.create-your-pizza .first-background .pizza.medium .background {
   width: 273px;
   height: 273px;
   transform: translate(-50%, -50%);
 }
 
-.choose-size-page .first-background .pizza.small .image {
+.create-your-pizza .first-background .pizza.small .image {
   background: url(../../assets/img/pizza-thin-crust-small.png) no-repeat;
   transform: translate(67px, 12px);
   width: 216px;
   height: 216px;
 }
 
-.choose-size-page .first-background .pizza.small .blurry-background {
+.create-your-pizza .first-background .pizza.small .blurry-background {
   width: 304px;
   height: 304px;
   transform: translate(-50%, -46%);
 }
 
-.choose-size-page .first-background .pizza.small .background {
+.create-your-pizza .first-background .pizza.small .background {
   width: 250px;
   height: 250px;
   transform: translate(-50%, -46%);
 }
 
-.choose-size-page .first-background .pizza.large .image {
+.create-your-pizza .first-background .pizza.large .image {
   background: url(../../assets/img/pizza-thin-crust-large.png) no-repeat;
   transform: translate(33px, -17px);
   width: 286px;
   height: 286px;
 }
 
-.choose-size-page .first-background .pizza.large .blurry-background {
+.create-your-pizza .first-background .pizza.large .blurry-background {
   width: 345px;
   height: 345px;
   transform: translate(-50%, -57%);
 }
 
-.choose-size-page .first-background .pizza.large .background {
+.create-your-pizza .first-background .pizza.large .background {
   width: 313px;
   height: 313px;
   transform: translate(-50%, -57%);
 }
 
-.choose-size-page .outlined-background {
+.create-your-pizza .outlined-background {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -141,7 +137,7 @@ p.init {
   z-index: 0;
 }
 
-.choose-size-page .outlined-background .background {
+.create-your-pizza .outlined-background .background {
   position: absolute;
   bottom: 0;
   left: 39%;
@@ -153,32 +149,32 @@ p.init {
   text-align: center;
 }
 
-.choose-size-page .outlined-background .background .text {
+.create-your-pizza .outlined-background .background .text {
   font-size: 10px;
   font-family: "RobotoBold";
   color: var(--base-text-color-gray-05);
   letter-spacing: 1px;
 }
 
-.choose-size-page .outlined-background.medium {
+.create-your-pizza .outlined-background.medium {
   width: 401px;
   height: 401px;
   transform: translate(-50%, -66%);
 }
 
-.choose-size-page .outlined-background.small {
+.create-your-pizza .outlined-background.small {
   width: 376px;
   height: 362px;
   transform: translate(-50%, -66%);
 }
 
-.choose-size-page .outlined-background.large {
+.create-your-pizza .outlined-background.large {
   width: 411px;
   height: 396px;
   transform: translate(-50%, -65%);
 }
 
-.choose-size-page .options {
+.create-your-pizza .options {
   display: block;
   width: 335px;
   margin: 224px auto 0 auto;
@@ -190,18 +186,18 @@ p.init {
   letter-spacing: -0.3px;
 }
 
-.choose-size-page .options .title {
+.create-your-pizza .options .title {
   text-align: center;
   padding-top: 20px;
   line-height: 23px;
   font-size: 20px;
 }
 
-.choose-size-page .options .title strong {
+.create-your-pizza .options .title strong {
   font-family: RobotoBold;
 }
 
-.choose-size-page .options .buttons {
+.create-your-pizza .options .buttons {
   display: flex;
   justify-content: space-evenly;
   margin-top: 32px;
@@ -209,16 +205,16 @@ p.init {
   text-align: center;
 }
 
-.choose-size-page .options .buttons .button {
+.create-your-pizza .options .buttons .button {
   position: relative;
   width: 98px;
 }
 
-.choose-size-page .options .buttons .button label {
+.create-your-pizza .options .buttons .button label {
   position: relative;
 }
 
-.choose-size-page
+.create-your-pizza
   .options
   .buttons
   .button
@@ -241,7 +237,7 @@ p.init {
   transform: translate(-50%, -50%);
 }
 
-.choose-size-page
+.create-your-pizza
   .options
   .buttons
   .button
@@ -251,18 +247,18 @@ p.init {
   color: #fff;
 }
 
-.choose-size-page .options .buttons .button label span {
+.create-your-pizza .options .buttons .button label span {
   position: relative;
   font-size: 15px;
   z-index: 10;
 }
 
-.choose-size-page .options .buttons .button input[type="radio"] {
+.create-your-pizza .options .buttons .button input[type="radio"] {
   visibility: hidden;
   position: absolute;
 }
 
-.choose-size-page .footer {
+.create-your-pizza .footer {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -270,7 +266,7 @@ p.init {
   height: 59px;
 }
 
-.choose-size-page .footer button {
+.create-your-pizza .footer button {
   width: 100%;
   height: 100%;
   background: linear-gradient(
