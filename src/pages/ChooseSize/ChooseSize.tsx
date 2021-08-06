@@ -3,6 +3,7 @@ import { IonContent, IonPage } from '@ionic/react';
 import NavBar from '../../components/NavBar/NavBar';
 import '../../components/CreateYourPizza/CreateYourPizza.css';
 import PizzaInfo from '../../components/CreateYourPizza/PizzaInfo';
+import RadioButton from '../../components/CreateYourPizza/RadioButton';
 
 const ChooseSize: React.FC = () => {
   const [size, setSize] = useState(12);
@@ -39,32 +40,9 @@ const ChooseSize: React.FC = () => {
             <div className="title">Choose your <strong>size</strong></div>
 
             <section className="buttons">
-              <div className="button">
-                <input type="radio" name="pizza-size" value="small" id="pizza-size-small" onClick={() => setSize(10)} />
-
-                <label htmlFor="pizza-size-small">
-                  <div className="background"></div>
-                  <span>Small</span>
-                </label>
-              </div>
-
-              <div className="button">
-                <input type="radio" name="pizza-size" value="medium" id="pizza-size-medium" onClick={() => setSize(12)} />
-
-                <label htmlFor="pizza-size-medium">
-                  <div className="background"></div>
-                  <span>Medium</span>
-                </label>
-              </div>
-
-              <div className="button">
-                <input type="radio" name="pizza-size" value="large" id="pizza-size-large" onClick={() => setSize(14)} />
-
-                <label htmlFor="pizza-size-large">
-                  <div className="background"></div>
-                  <span>Large</span>
-                </label>
-              </div>
+              <RadioButton name="pizza-size" value="small" id="pizza-size-small" func={() => setSize(10)} text="Small" />
+              <RadioButton name="pizza-size" value="medium" id="pizza-size-medium" func={() => setSize(12)} text="Medium" />
+              <RadioButton name="pizza-size" value="large" id="pizza-size-large" func={() => setSize(14)} text="Large" />
             </section>
           </section>
 
