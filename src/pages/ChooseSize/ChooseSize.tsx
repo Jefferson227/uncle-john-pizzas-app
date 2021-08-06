@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { IonContent, IonPage } from '@ionic/react';
 import NavBar from '../../components/NavBar/NavBar';
 import '../../components/CreateYourPizza/CreateYourPizza.css';
+import PizzaInfo from '../../components/CreateYourPizza/PizzaInfo';
 
 const ChooseSize: React.FC = () => {
   const [size, setSize] = useState(12);
@@ -32,23 +33,7 @@ const ChooseSize: React.FC = () => {
         <NavBar pageName="choose-size" leftButtonType="back" />
 
         <section className="create-your-pizza">
-          <section className="first-background">
-            <div className="title">Create Your Pizza</div>
-            <div className="components">Size, Crust, Toppings</div>
-            <div className="price">${getPrice(size)}</div>
-
-            <div className={`pizza ${getSizeName(size)}`}>
-              <div className="blurry-background"></div>
-              <div className="background"></div>
-              <div className="image"></div>
-            </div>
-          </section>
-
-          <section className={`outlined-background ${getSizeName(size)}`}>
-            <div className="background">
-              <span className="text">{size}''</span>
-            </div>
-          </section>
+          <PizzaInfo components="size, crust, toppings" price={getPrice(size)} sizeName={getSizeName(size)} size={size} />
 
           <section className="options">
             <div className="title">Choose your <strong>size</strong></div>
