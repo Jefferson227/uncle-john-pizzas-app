@@ -40,9 +40,9 @@ const ChooseSize: React.FC = () => {
             <div className="title">Choose your <strong>size</strong></div>
 
             <section className="buttons">
-              <RadioButton name="pizza-size" value="small" id="pizza-size-small" func={() => setSize(10)} text="Small" />
-              <RadioButton name="pizza-size" value="medium" id="pizza-size-medium" func={() => setSize(12)} text="Medium" />
-              <RadioButton name="pizza-size" value="large" id="pizza-size-large" func={() => setSize(14)} text="Large" />
+              <RadioButton name="pizza-size" value="small" id="pizza-size-small" func={() => setSize(10)} checked={size === 10} text="Small" />
+              <RadioButton name="pizza-size" value="medium" id="pizza-size-medium" func={() => setSize(12)} checked={size === 12} text="Medium" />
+              <RadioButton name="pizza-size" value="large" id="pizza-size-large" func={() => setSize(14)} checked={size === 14} text="Large" />
             </section>
           </section>
 

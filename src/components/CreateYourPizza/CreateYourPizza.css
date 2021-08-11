@@ -210,20 +210,15 @@
   width: 98px;
 }
 
-.create-your-pizza .options .buttons .button label {
-  position: relative;
-}
-
 .create-your-pizza
   .options
   .buttons
   .button
   input[type="radio"]:checked
-  + label
-  .background {
+  + label {
   position: absolute;
   top: 50%;
-  left: 0;
+  left: 50%;
   z-index: 0;
   background: linear-gradient(
     107.9deg,
@@ -235,14 +230,7 @@
   width: 98px;
   height: 38px;
   transform: translate(-50%, -50%);
-}
-
-.create-your-pizza
-  .options
-  .buttons
-  .button
-  input[type="radio"]:checked
-  + label {
+  padding-top: 8px;
   font-family: RobotoBold;
   color: #fff;
 }
