@@ -3,9 +3,10 @@ interface PizzaInfoProps {
   price: string;
   sizeName: string;
   size?: number;
+  crustPrice?: string;
 }
 
-const PizzaInfo: React.FC<PizzaInfoProps> = ({components, price, sizeName, size = ''}) => {
+const PizzaInfo: React.FC<PizzaInfoProps> = ({components, price, sizeName, size = '', crustPrice = ''}) => {
   return (
     <>
       <section className="first-background">
@@ -22,7 +23,7 @@ const PizzaInfo: React.FC<PizzaInfoProps> = ({components, price, sizeName, size 
 
       <section className={`outlined-background ${sizeName}`}>
         <div className="background">
-          <span className="text">{size}''</span>
+          <span className="text">{size ? `${size}''` : `+$${crustPrice}`}</span>
         </div>
       </section>
 	  </>

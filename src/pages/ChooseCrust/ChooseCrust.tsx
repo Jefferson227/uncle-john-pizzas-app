@@ -32,7 +32,7 @@ const ChooseCrust: React.FC = () => {
         <NavBar pageName="choose-size" leftButtonType="back" />
 
         <section className="create-your-pizza">
-          <PizzaInfo components="size, crust, toppings" price={order.price} sizeName={order.size} />
+          <PizzaInfo components="size, crust, toppings" price={order.price} sizeName={order.size} crustPrice="2.00" />
 
           {/* <section className="options">
             <div className="title">Choose your <strong>size</strong></div>
