@@ -210,6 +210,10 @@
   width: 98px;
 }
 
+.create-your-pizza .options .buttons .button label {
+  font-size: 15px;
+}
+
 .create-your-pizza
   .options
   .buttons
@@ -230,15 +234,9 @@
   width: 98px;
   height: 38px;
   transform: translate(-50%, -50%);
-  padding-top: 8px;
+  padding-top: 10px;
   font-family: RobotoBold;
   color: #fff;
-}
-
-.create-your-pizza .options .buttons .button label span {
-  position: relative;
-  font-size: 15px;
-  z-index: 10;
 }
 
 .create-your-pizza .options .buttons .button input[type="radio"] {
