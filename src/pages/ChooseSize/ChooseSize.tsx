@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { IonContent, IonPage } from '@ionic/react';
 import NavBar from '../../components/NavBar/NavBar';
+import IOrder from '../../service/interfaces/IOrder';
+import Service from '../../service/service';
 import '../../components/CreateYourPizza/CreateYourPizza.css';
 import PizzaInfo from '../../components/CreateYourPizza/PizzaInfo';
 import RadioButton from '../../components/CreateYourPizza/RadioButton';
@@ -23,6 +25,10 @@ const ChooseSize: React.FC = () => {
       default: return '10.00';
     }
   };
+  const saveOrder = (order: IOrder) => {
+    console.log('saveOrder clicked');
+    Service.saveOrder(order);
+  }
 
   useEffect(() => {
     console.log(size);
@@ -47,7 +53,7 @@ const ChooseSize: React.FC = () => {
           </section>
 
           <section className="footer">
-            <button>Next</button>
+            <button onClick={() => saveOrder({size: getSizeName(size), crust: '', toppings: [], price: getPrice(size)})}>Next</button>
           </section>
         </section>
       </IonContent>
