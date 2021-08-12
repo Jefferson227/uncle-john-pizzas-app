@@ -4,6 +4,7 @@ import { IonReactRouter } from '@ionic/react-router';
 import { setupConfig } from '@ionic/react';
 import Home from './pages/Home/Home';
 import ChooseSize from './pages/ChooseSize/ChooseSize';
+import ChooseCrust from './pages/ChooseCrust/ChooseCrust';
 
 /* Custom CSS */
 import './App.css';
@@ -48,6 +49,9 @@ const App: React.FC = () => (
         </Route>
         <Route exact path="/choose-size">
           <ChooseSize />
+        </Route>
+        <Route exact path="/choose-crust">
+          <ChooseCrust />
         </Route>
       </IonRouterOutlet>
     </IonReactRouter>

@@ -7,7 +7,7 @@ const Service = {
 
     console.log('order saved');
   },
-  loadOrder: () => {
+  loadOrder: (): IOrder => {
     const strOrder = localStorage.getItem('order') ?? '';
     if (strOrder) console.log('order retrieved');
 

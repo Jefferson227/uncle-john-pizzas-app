@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import { IonContent, IonPage } from '@ionic/react';
-import { useIonRouter } from '@ionic/react';
 import NavBar from '../../components/NavBar/NavBar';
 import IOrder from '../../service/interfaces/IOrder';
 import Service from '../../service/service';
@@ -8,9 +7,8 @@ import '../../components/CreateYourPizza/CreateYourPizza.css';
 import PizzaInfo from '../../components/CreateYourPizza/PizzaInfo';
 import RadioButton from '../../components/CreateYourPizza/RadioButton';
 
-const ChooseSize: React.FC = () => {
-  const router = useIonRouter();
-  const order: IOrder = useMemo(() => {
+const ChooseCrust: React.FC = () => {
+  let order: IOrder = useMemo(() => {
     return {
       size: '',
       crust: '',
@@ -18,32 +16,19 @@ const ChooseSize: React.FC = () => {
       toppings: []
     };
   }, []);
-  const [size, setSize] = useState(12);
-  const getSizeName = (size: number) => {
-    switch (size) {
-      case 10: return 'small';
-      case 12: return 'medium';
-      case 14: return 'large';
-      default: return 'medium';
-    }
-  };
-  const getPrice = (size: number) => {
-    switch (size) {
-      case 10: return '8.00';
-      case 12: return '10.00';
-      case 14: return '12.00';
-      default: return '10.00';
-    }
-  };
-  const goToNextPage = (order: IOrder) => {
-    Service.saveOrder(order);
-    router.push('/choose-crust');
-  };
+  const loadOrder = () => {
+    console.log('loadOrder clicked');
+    return Service.loadOrder();
+  }
+  const [orderHasLoaded, setOrderHasLoaded] = useState(false);
 
   useEffect(() => {
-    order.size = getSizeName(size);
-    order.price = getPrice(size);
-  }, [order, size]);
+    if (!orderHasLoaded) {
+      order = loadOrder();
+      setOrderHasLoaded(true);
+      console.log('order has loaded');
+    }
+  }, [order]);
 
   return (
     <IonPage>
@@ -51,9 +36,9 @@ const ChooseSize: React.FC = () => {
         <NavBar pageName="choose-size" leftButtonType="back" />
 
         <section className="create-your-pizza">
-          <PizzaInfo components="size, crust, toppings" price={getPrice(size)} sizeName={getSizeName(size)} size={size} />
+          <PizzaInfo components="size, crust, toppings" price={order.price} sizeName={order.size} />
 
-          <section className="options">
+          {/* <section className="options">
             <div className="title">Choose your <strong>size</strong></div>
 
             <section className="buttons">
@@ -61,10 +46,10 @@ const ChooseSize: React.FC = () => {
               <RadioButton name="pizza-size" value="medium" id="pizza-size-medium" func={() => setSize(12)} checked={size === 12} text="Medium" />
               <RadioButton name="pizza-size" value="large" id="pizza-size-large" func={() => setSize(14)} checked={size === 14} text="Large" />
             </section>
-          </section>
+          </section> */}
 
           <section className="footer">
-            <button onClick={() => goToNextPage(order)}>Next</button>
+            <button>Next</button>
           </section>
         </section>
       </IonContent>
@@ -72,4 +57,4 @@ const ChooseSize: React.FC = () => {
   );
 };
 
-export default ChooseSize;
+export default ChooseCrust;

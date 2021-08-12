@@ -2,10 +2,10 @@ interface PizzaInfoProps {
   components: string;
   price: string;
   sizeName: string;
-  size: number;
+  size?: number;
 }
 
-const PizzaInfo: React.FC<PizzaInfoProps> = ({components, price, sizeName, size}) => {
+const PizzaInfo: React.FC<PizzaInfoProps> = ({components, price, sizeName, size = ''}) => {
   return (
     <>
       <section className="first-background">
