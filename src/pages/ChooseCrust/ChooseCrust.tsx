@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo } from 'react';
+import React, { useState, useEffect } from 'react';
 import { IonContent, IonPage } from '@ionic/react';
 import NavBar from '../../components/NavBar/NavBar';
 import IOrder from '../../service/interfaces/IOrder';
@@ -8,27 +8,23 @@ import PizzaInfo from '../../components/CreateYourPizza/PizzaInfo';
 import RadioButton from '../../components/CreateYourPizza/RadioButton';
 
 const ChooseCrust: React.FC = () => {
-  let order: IOrder = useMemo(() => {
-    return {
+  const loadOrder = () => {
+    setOrder(Service.loadOrder());
+  }
+  const [orderHasLoaded, setOrderHasLoaded] = useState(false);
+  const [order, setOrder] = useState<IOrder>({
       size: '',
       crust: '',
       price: '',
       toppings: []
-    };
-  }, []);
-  const loadOrder = () => {
-    console.log('loadOrder clicked');
-    return Service.loadOrder();
-  }
-  const [orderHasLoaded, setOrderHasLoaded] = useState(false);
+  });
 
   useEffect(() => {
     if (!orderHasLoaded) {
-      order = loadOrder();
+      loadOrder();
       setOrderHasLoaded(true);
-      console.log('order has loaded');
     }
-  }, [order]);
+  }, [orderHasLoaded]);
 
   return (
     <IonPage>
