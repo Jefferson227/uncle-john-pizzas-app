@@ -51,7 +51,7 @@ const ChooseSize: React.FC = () => {
         <NavBar pageName="choose-size" leftButtonType="back" />
 
         <section className="create-your-pizza">
-          <PizzaInfo components="size, crust, toppings" price={getPrice(size)} sizeName={getSizeName(size)} size={size} />
+          <PizzaInfo price={getPrice(size)} sizeName={getSizeName(size)} size={size} />
 
           <section className="options">
             <div className="title">Choose your <strong>size</strong></div>
