@@ -18,13 +18,23 @@ const ChooseCrust: React.FC = () => {
       price: '',
       toppings: []
   });
+  const [crust, setCrust] = useState('thin');
+  const getCrustPrice = (crust: string) => {
+    switch (crust) {
+      case 'thin': return '2.00'
+      case 'thick': return '4.00'
+      default: return '2.00'
+    }
+  }
 
   useEffect(() => {
     if (!orderHasLoaded) {
       loadOrder();
       setOrderHasLoaded(true);
     }
-  }, [orderHasLoaded]);
+
+    order.crust = crust;
+  }, [orderHasLoaded, crust, order]);
 
   return (
     <IonPage>
@@ -32,17 +42,16 @@ const ChooseCrust: React.FC = () => {
         <NavBar pageName="choose-size" leftButtonType="back" />
 
         <section className="create-your-pizza">
-          <PizzaInfo price={order.price} sizeName={order.size} chosenSize={order.size} crustPrice="2.00" />
+          <PizzaInfo price={order.price} sizeName={order.size} chosenSize={order.size} crustPrice={getCrustPrice(crust)} />
 
-          {/* <section className="options">
-            <div className="title">Choose your <strong>size</strong></div>
+          <section className="options">
+            <div className="title">Choose your <strong>crust</strong></div>
 
             <section className="buttons">
-              <RadioButton name="pizza-size" value="small" id="pizza-size-small" func={() => setSize(10)} checked={size === 10} text="Small" />
-              <RadioButton name="pizza-size" value="medium" id="pizza-size-medium" func={() => setSize(12)} checked={size === 12} text="Medium" />
-              <RadioButton name="pizza-size" value="large" id="pizza-size-large" func={() => setSize(14)} checked={size === 14} text="Large" />
+              <RadioButton name="crust-type" value="thin" id="crust-type-thin" func={() => setCrust('thin')} checked={crust === 'thin'} text="Thin" />
+              <RadioButton name="crust-type" value="thick" id="crust-type-thick" func={() => setCrust('thick')} checked={crust === 'thick'} text="Thick" />
             </section>
-          </section> */}
+          </section>
 
           <section className="footer">
             <button>Next</button>
