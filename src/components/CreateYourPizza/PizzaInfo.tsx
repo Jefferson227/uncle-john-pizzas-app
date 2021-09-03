@@ -8,12 +8,26 @@ interface PizzaInfoProps {
   toppings?: Array<string>;
 }
 
-const PizzaInfo: React.FC<PizzaInfoProps> = ({price, chosenSize = 'size', sizeName, size = '', crust = 'crust', crustPrice = '', toppings = ['toppings']}) => {
+const PizzaInfo: React.FC<PizzaInfoProps> = ({
+  price,
+  chosenSize = 'size',
+  sizeName,
+  size = '',
+  crust = 'crust',
+  crustPrice = '',
+  toppings = ['toppings']
+}) => {
   return (
     <>
       <section className="first-background">
         <div className="title">Create Your Pizza</div>
-        <div className="components">{`${chosenSize}, ${crust}, ${toppings[0]}`}</div>
+
+        <div className="components">
+          <span className={chosenSize !== 'size' ? 'white-font' : ''}>{chosenSize}</span>,&nbsp;
+          <span>{crust}</span>,&nbsp;
+          <span>{toppings[0]}</span>
+        </div>
+
         <div className="price">${price}</div>
 
         <div className={`pizza ${sizeName}`}>

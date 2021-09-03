@@ -29,6 +29,10 @@
   color: rgba(255, 255, 255, 0.3);
 }
 
+.create-your-pizza .first-background .components .white-font {
+  color: #fff;
+}
+
 .create-your-pizza .first-background .price {
   position: absolute;
   top: 24px;
