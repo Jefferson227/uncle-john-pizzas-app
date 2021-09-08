@@ -81,6 +81,11 @@
   height: 239px;
 }
 
+.create-your-pizza .first-background .pizza.medium .image.thick {
+  background: url(../../assets/img/pizza-thick-crust.png) no-repeat;
+  transform: translate(47px, -3px);
+}
+
 .create-your-pizza .first-background .pizza.medium .blurry-background {
   width: 325px;
   height: 325px;

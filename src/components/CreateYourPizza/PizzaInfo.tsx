@@ -3,6 +3,7 @@ interface PizzaInfoProps {
   chosenSize?: string;
   sizeName: string;
   size?: number;
+  chosenCrust?: string;
   crust?: string;
   crustPrice?: string;
   toppings?: Array<string>;
@@ -13,7 +14,8 @@ const PizzaInfo: React.FC<PizzaInfoProps> = ({
   chosenSize = 'size',
   sizeName,
   size = '',
-  crust = 'crust',
+  chosenCrust = 'crust',
+  crust = 'thin',
   crustPrice = '',
   toppings = ['toppings']
 }) => {
@@ -24,7 +26,7 @@ const PizzaInfo: React.FC<PizzaInfoProps> = ({
 
         <div className="components">
           <span className={chosenSize !== 'size' ? 'white-font' : ''}>{chosenSize}</span>,&nbsp;
-          <span>{crust}</span>,&nbsp;
+          <span>{chosenCrust}</span>,&nbsp;
           <span>{toppings[0]}</span>
         </div>
 
@@ -33,7 +35,7 @@ const PizzaInfo: React.FC<PizzaInfoProps> = ({
         <div className={`pizza ${sizeName}`}>
           <div className="blurry-background"></div>
           <div className="background"></div>
-          <div className="image"></div>
+          <div className={`image ${crust}`}></div>
         </div>
       </section>
 
