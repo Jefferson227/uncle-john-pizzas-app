@@ -82,7 +82,7 @@
 }
 
 .create-your-pizza .first-background .pizza.medium .image.thick {
-  background: url(../../assets/img/pizza-thick-crust.png) no-repeat;
+  background: url(../../assets/img/pizza-thick-crust-medium.png) no-repeat;
   transform: translate(47px, -3px);
 }
 
@@ -105,6 +105,11 @@
   height: 216px;
 }
 
+.create-your-pizza .first-background .pizza.small .image.thick {
+  background: url(../../assets/img/pizza-thick-crust-small.png) no-repeat;
+  transform: translate(61px, 9px);
+}
+
 .create-your-pizza .first-background .pizza.small .blurry-background {
   width: 304px;
   height: 304px;
@@ -122,6 +127,11 @@
   transform: translate(33px, -17px);
   width: 286px;
   height: 286px;
+}
+
+.create-your-pizza .first-background .pizza.large .image.thick {
+  background: url(../../assets/img/pizza-thick-crust-large.png) no-repeat;
+  transform: translate(25px, -23px);
 }
 
 .create-your-pizza .first-background .pizza.large .blurry-background {
