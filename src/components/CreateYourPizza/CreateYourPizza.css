@@ -214,6 +214,10 @@
   width: 98px;
 }
 
+.create-your-pizza .options .buttons .button.margin-left {
+  margin-right: 54px;
+}
+
 .create-your-pizza .options .buttons .button label {
   font-size: 15px;
 }

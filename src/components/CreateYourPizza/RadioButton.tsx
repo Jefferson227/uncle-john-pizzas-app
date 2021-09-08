@@ -9,7 +9,7 @@ interface RadioButtonProps {
 
 const RadioButton: React.FC<RadioButtonProps> = ({name, value, id, text, func, checked}) => {
   return (
-    <div className="button">
+    <div className={`button ${name === 'crust-type' && value === 'thin' ? 'margin-left' : ''}`}>
       <input type="radio" name={name} value={value} id={id} onClick={func} defaultChecked={checked} />
 
       <label htmlFor={id}>{text}</label>
