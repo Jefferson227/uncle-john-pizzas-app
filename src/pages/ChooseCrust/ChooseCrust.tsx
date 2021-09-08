@@ -26,6 +26,13 @@ const ChooseCrust: React.FC = () => {
       default: return '2.00'
     }
   }
+  const [orderPrice, setOrderPrice] = useState('0.00');
+  const getOrderPrice = (strOrderPrice: string, strCrustPrice: string) => {
+    const orderPrice = parseFloat(strOrderPrice);
+    const crustPrice = parseFloat(strCrustPrice);
+
+    return (orderPrice + crustPrice).toFixed(2).toString();
+  }
 
   useEffect(() => {
     if (!orderHasLoaded) {
@@ -34,6 +41,7 @@ const ChooseCrust: React.FC = () => {
     }
 
     order.crust = crust;
+    setOrderPrice(getOrderPrice(order.price, getCrustPrice(crust)));
   }, [orderHasLoaded, crust, order]);
 
   return (
@@ -42,7 +50,7 @@ const ChooseCrust: React.FC = () => {
         <NavBar pageName="choose-size" leftButtonType="back" />
 
         <section className="create-your-pizza">
-          <PizzaInfo price={order.price} sizeName={order.size} chosenSize={order.size} crust={crust} crustPrice={getCrustPrice(crust)} />
+          <PizzaInfo price={orderPrice} sizeName={order.size} chosenSize={order.size} crust={crust} crustPrice={getCrustPrice(crust)} />
 
           <section className="options">
             <div className="title">Choose your <strong>crust</strong></div>
