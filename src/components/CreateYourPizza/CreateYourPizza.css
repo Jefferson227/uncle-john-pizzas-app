@@ -153,6 +153,12 @@
   text-align: center;
 }
 
+.create-your-pizza .outlined-background .background.crust-price {
+  left: 36%;
+  width: 62px;
+  padding: 2px 0 3px 0;
+}
+
 .create-your-pizza .outlined-background .background .text {
   font-size: 10px;
   font-family: "RobotoBold";
