@@ -40,9 +40,15 @@ const PizzaInfo: React.FC<PizzaInfoProps> = ({
       </section>
 
       <section className={`outlined-background ${sizeName}`}>
-        <div className={`background ${!size ? 'crust-price' : ''}`}>
-          <span className="text">{size ? `${size}''` : `+$${crustPrice}`}</span>
-        </div>
+        {
+          size
+            ? <div className='background'>
+                <span className="text">{size}</span>
+              </div>
+            : <div className='background crust-price'>
+                <span className="text">+${crustPrice}</span>
+              </div>
+        }
       </section>
 	  </>
   );
