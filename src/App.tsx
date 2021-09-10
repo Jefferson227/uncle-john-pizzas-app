@@ -5,6 +5,7 @@ import { setupConfig } from '@ionic/react';
 import Home from './pages/Home/Home';
 import ChooseSize from './pages/ChooseSize/ChooseSize';
 import ChooseCrust from './pages/ChooseCrust/ChooseCrust';
+import ChooseToppings from './pages/ChooseToppings/ChooseToppings';
 
 /* Custom CSS */
 import './App.css';
@@ -52,6 +53,9 @@ const App: React.FC = () => (
         </Route>
         <Route exact path="/choose-crust">
           <ChooseCrust />
+        </Route>
+        <Route exact path="/choose-toppings">
+          <ChooseToppings />
         </Route>
       </IonRouterOutlet>
     </IonReactRouter>
