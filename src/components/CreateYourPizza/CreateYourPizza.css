@@ -156,6 +156,10 @@
   z-index: 0;
 }
 
+.create-your-pizza .outlined-background.invisible {
+  display: none;
+}
+
 .create-your-pizza .outlined-background .background {
   position: absolute;
   bottom: 0;

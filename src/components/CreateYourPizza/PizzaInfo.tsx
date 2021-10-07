@@ -7,6 +7,7 @@ interface PizzaInfoProps {
   crust?: string;
   crustPrice?: string;
   toppings?: Array<string>;
+  displayOutlinedBackground?: boolean;
 }
 
 const PizzaInfo: React.FC<PizzaInfoProps> = ({
@@ -17,7 +18,8 @@ const PizzaInfo: React.FC<PizzaInfoProps> = ({
   chosenCrust = 'crust',
   crust = 'thin',
   crustPrice = '',
-  toppings = ['toppings']
+  toppings = ['toppings'],
+  displayOutlinedBackground = true
 }) => {
   return (
     <>
@@ -26,7 +28,7 @@ const PizzaInfo: React.FC<PizzaInfoProps> = ({
 
         <div className="components">
           <span className={chosenSize !== 'size' ? 'white-font' : ''}>{chosenSize}</span>,&nbsp;
-          <span>{chosenCrust}</span>,&nbsp;
+          <span className={chosenCrust !== 'crust' ? 'white-font' : ''}>{chosenCrust}</span>,&nbsp;
           <span>{toppings[0]}</span>
         </div>
 
@@ -39,7 +41,7 @@ const PizzaInfo: React.FC<PizzaInfoProps> = ({
         </div>
       </section>
 
-      <section className={`outlined-background ${sizeName}`}>
+      <section className={displayOutlinedBackground ? `outlined-background ${sizeName}` : `outlined-background invisible`}>
         {
           size
             ? <div className='background'>

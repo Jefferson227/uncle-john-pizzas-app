@@ -32,9 +32,9 @@ const ChooseToppings: React.FC = () => {
         <NavBar pageName="choose-size" leftButtonType="back" />
 
         <section className="create-your-pizza">
-          {/* <PizzaInfo price={order.price} sizeName={order.size} chosenSize={order.size} crust={crust} crustPrice={getCrustPrice(crust)} />
+          <PizzaInfo price={order.price} sizeName={order.size} chosenSize={order.size} chosenCrust={order.crust} displayOutlinedBackground={false} />
 
-          <section className="options">
+          {/* <section className="options">
             <div className="title">Choose your <strong>crust</strong></div>
 
             <section className="buttons">
