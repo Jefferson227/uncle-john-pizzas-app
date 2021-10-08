@@ -215,6 +215,10 @@
   letter-spacing: -0.3px;
 }
 
+.create-your-pizza .options.toppings {
+  margin: 188px auto 0 auto;
+}
+
 .create-your-pizza .options .title {
   text-align: center;
   padding-top: 20px;
@@ -224,6 +228,19 @@
 
 .create-your-pizza .options .title strong {
   font-family: RobotoBold;
+}
+
+.create-your-pizza .options .subtitle {
+  font-family: RobotoBold;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 10px;
+  line-height: 12px;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--base-text-color-gray-05);
+  margin-top: 5px;
 }
 
 .create-your-pizza .options .buttons {

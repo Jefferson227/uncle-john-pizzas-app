@@ -34,14 +34,15 @@ const ChooseToppings: React.FC = () => {
         <section className="create-your-pizza">
           <PizzaInfo price={order.price} sizeName={order.size} chosenSize={order.size} chosenCrust={order.crust} displayOutlinedBackground={false} />
 
-          {/* <section className="options">
-            <div className="title">Choose your <strong>crust</strong></div>
+          <section className="options toppings">
+            <div className="title">Choose up to <strong>7 toppings</strong></div>
+            <div className="subtitle">free 3 add-ons</div>
 
-            <section className="buttons">
+            {/* <section className="buttons">
               <RadioButton name="crust-type" value="thin" id="crust-type-thin" func={() => setCrust('thin')} checked={crust === 'thin'} text="Thin" />
               <RadioButton name="crust-type" value="thick" id="crust-type-thick" func={() => setCrust('thick')} checked={crust === 'thick'} text="Thick" />
-            </section>
-          </section> */}
+            </section> */}
+          </section>
 
           <section className="footer">
             <button>Next</button>
