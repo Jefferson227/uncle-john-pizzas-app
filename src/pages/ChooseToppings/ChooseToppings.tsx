@@ -5,6 +5,7 @@ import IOrder from '../../service/interfaces/IOrder';
 import Service from '../../service/service';
 import '../../components/CreateYourPizza/CreateYourPizza.css';
 import PizzaInfo from '../../components/CreateYourPizza/PizzaInfo';
+import PepperoniImg from '../../assets/img/pepperoni-slide-card.png';
 
 const ChooseToppings: React.FC = () => {
   const loadOrder = () => {
@@ -42,6 +43,18 @@ const ChooseToppings: React.FC = () => {
               <RadioButton name="crust-type" value="thin" id="crust-type-thin" func={() => setCrust('thin')} checked={crust === 'thin'} text="Thin" />
               <RadioButton name="crust-type" value="thick" id="crust-type-thick" func={() => setCrust('thick')} checked={crust === 'thick'} text="Thick" />
             </section> */}
+            <section className="slide-cards">
+              <div className="card">
+                <img src={PepperoniImg} alt="Pepperoni" />
+
+                <div className="container-title">
+                  <div className="title">Pepperoni</div>
+                  <div className="price">+ $0.00</div>
+                </div>
+
+                <input type="checkbox" name="pepperoni" id="pepperoni" />
+              </div>
+            </section>
           </section>
 
           <section className="footer">

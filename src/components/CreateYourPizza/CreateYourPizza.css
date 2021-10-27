@@ -294,6 +294,21 @@
   position: absolute;
 }
 
+.create-your-pizza .options .slide-cards .card {
+  display: flex;
+  justify-content: space-around;
+}
+
+.create-your-pizza .options .slide-cards .card .container-title .title {
+  font-size: 14px;
+  font-family: RobotoBold;
+}
+
+.create-your-pizza .options .slide-cards .card .container-title .price {
+  font-size: 14px;
+  font-family: RobotoThin;
+}
+
 .create-your-pizza .footer {
   position: absolute;
   bottom: 0;
