@@ -39,10 +39,6 @@ const ChooseToppings: React.FC = () => {
             <div className="title">Choose up to <strong>7 toppings</strong></div>
             <div className="subtitle">free 3 add-ons</div>
 
-            {/* <section className="buttons">
-              <RadioButton name="crust-type" value="thin" id="crust-type-thin" func={() => setCrust('thin')} checked={crust === 'thin'} text="Thin" />
-              <RadioButton name="crust-type" value="thick" id="crust-type-thick" func={() => setCrust('thick')} checked={crust === 'thick'} text="Thick" />
-            </section> */}
             <section className="slide-cards">
               <div className="card">
                 <img src={PepperoniImg} alt="Pepperoni" />

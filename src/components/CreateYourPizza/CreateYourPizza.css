@@ -216,7 +216,8 @@
 }
 
 .create-your-pizza .options.toppings {
-  margin: 188px auto 0 auto;
+  margin: 178px auto 0 auto;
+  padding-bottom: 26px;
 }
 
 .create-your-pizza .options .title {
@@ -297,6 +298,17 @@
 .create-your-pizza .options .slide-cards .card {
   display: flex;
   justify-content: space-around;
+  background: #FFFFFF;
+  border: 0.5px solid var(--base-text-color-gray-13);
+  box-sizing: border-box;
+  box-shadow: 0px 4px 15px rgba(218, 218, 229, 0.7);
+  border-radius: 20px;
+  width: 231px;
+  margin: 21px auto 0 auto;
+}
+
+.create-your-pizza .options .slide-cards .card .container-title {
+  transform: translate(-15px, -4px);
 }
 
 .create-your-pizza .options .slide-cards .card .container-title .title {
