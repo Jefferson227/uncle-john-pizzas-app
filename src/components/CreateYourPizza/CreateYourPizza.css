@@ -296,6 +296,7 @@
 }
 
 .create-your-pizza .options .slide-cards .card {
+  position: relative;
   display: flex;
   justify-content: space-around;
   background: #FFFFFF;
@@ -319,6 +320,27 @@
 .create-your-pizza .options .slide-cards .card .container-title .price {
   font-size: 14px;
   font-family: RobotoThin;
+}
+
+.create-your-pizza .options .slide-cards .card .checkbox input[type="checkbox"] {
+  visibility: hidden;
+  position: absolute;
+}
+
+.create-your-pizza .options .slide-cards .card .checkbox label {
+  background: linear-gradient(107.9deg, var(--base-text-color-red-10) 1.55%, var(--base-text-color-orange-10) 94.08%);
+  box-shadow: 0px 6px 25px rgba(245, 49, 63, 0.4);
+  border-radius: 49.5px;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  position: relative;
+  margin: 36px 4px 0 0;
+}
+
+.create-your-pizza .options .slide-cards .card .checkbox label img {
+  position: absolute;
+  transform: translate(50%, 75%);
 }
 
 .create-your-pizza .footer {

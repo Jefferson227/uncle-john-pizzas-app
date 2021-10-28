@@ -6,6 +6,7 @@ import Service from '../../service/service';
 import '../../components/CreateYourPizza/CreateYourPizza.css';
 import PizzaInfo from '../../components/CreateYourPizza/PizzaInfo';
 import PepperoniImg from '../../assets/img/pepperoni-slide-card.png';
+import CheckmarkIcon from '../../assets/img/checkmark-icon.svg';
 
 const ChooseToppings: React.FC = () => {
   const loadOrder = () => {
@@ -48,7 +49,12 @@ const ChooseToppings: React.FC = () => {
                   <div className="price">+ $0.00</div>
                 </div>
 
-                <input type="checkbox" name="pepperoni" id="pepperoni" />
+                <div className="checkbox">
+                  <input type="checkbox" name="pepperoni" id="pepperoni" />
+                  <label htmlFor="pepperoni">
+                    <img src={CheckmarkIcon} alt="Checked" />
+                  </label>
+                </div>
               </div>
             </section>
           </section>
