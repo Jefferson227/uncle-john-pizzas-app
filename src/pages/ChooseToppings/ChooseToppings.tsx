@@ -6,6 +6,7 @@ import Service from '../../service/service';
 import '../../components/CreateYourPizza/CreateYourPizza.css';
 import PizzaInfo from '../../components/CreateYourPizza/PizzaInfo';
 import PepperoniImg from '../../assets/img/pepperoni-slide-card.png';
+import MushroomsImg from '../../assets/img/mushrooms-slide-card.png';
 import CheckmarkIcon from '../../assets/img/checkmark-icon.svg';
 
 const ChooseToppings: React.FC = () => {
@@ -52,6 +53,22 @@ const ChooseToppings: React.FC = () => {
                 <div className="checkbox">
                   <input type="checkbox" name="pepperoni" id="pepperoni" />
                   <label htmlFor="pepperoni">
+                    <img src={CheckmarkIcon} alt="Checked" />
+                  </label>
+                </div>
+              </div>
+
+              <div className="card">
+                <img src={MushroomsImg} alt="Mushrooms" />
+
+                <div className="container-title">
+                  <div className="title">Mushrooms</div>
+                  <div className="price">+ $0.00</div>
+                </div>
+
+                <div className="checkbox">
+                  <input type="checkbox" name="mushrooms" id="mushrooms" />
+                  <label htmlFor="mushrooms">
                     <img src={CheckmarkIcon} alt="Checked" />
                   </label>
                 </div>
